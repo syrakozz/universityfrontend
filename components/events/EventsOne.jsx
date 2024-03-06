@@ -8,14 +8,15 @@ export default function EventsOne() {
   const [pageItems, setPageItems] = useState([]);
   const [currentCategory, setCurrentCategory] = useState("News");
   useEffect(() => {
-    if (currentCategory == "News") {
-      setPageItems(events);
+    console.log("Current Category:", currentCategory);
+    if (currentCategory === "News") {
+      setPageItems(events.filter(elm => elm.category === currentCategory));
     } else {
-      let filtered = events.filter((elm) => elm.category == currentCategory);
+      let filtered = events.filter(elm => elm.category === currentCategory);
       setPageItems(filtered);
     }
   }, [currentCategory]);
-
+  
   return (
     <>
       <section className="page-header -type-1">

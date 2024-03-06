@@ -32,11 +32,11 @@ export default function Header() {
                 </div>
 
                 {/* header explore start */}
-                <HeaderExplore
+                {/* <HeaderExplore
                   allClasses={
                     "header__explore text-green-1 ml-60 xl:ml-30 xl:d-none"
                   }
-                />
+                /> */}
                 {/* header explore end */}
               </div>
             </div>

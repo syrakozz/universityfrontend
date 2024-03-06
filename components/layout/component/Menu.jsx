@@ -81,20 +81,20 @@ export default function Menu({ allClasses, headerPosition }) {
             <li className="menu-item-has-children -has-mega-menu">
               <Link
                 data-barba
-                href="#"
+                href="/courses-list-1"
                 className={menuItem == "Courses" ? "activeMenu" : ""}
               >
-                Courses <i className="icon-chevron-right text-13 ml-10"></i>
+              Academic
               </Link>
 
-              <div className="mega xl:d-none">
+              {/* <div className="mega xl:d-none">
                 <div className="mega__menu">
                   <div className="row x-gap-40">
                     <div className="col">
                       <h4 className="text-17 fw-500 mb-20">
                         Course List Layouts
                       </h4>
-
+v
                       <ul className="mega__list">
                         {menuList[1].links[0].links.map((elm, i) => (
                           <li
@@ -215,7 +215,7 @@ export default function Menu({ allClasses, headerPosition }) {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </li>
 
           

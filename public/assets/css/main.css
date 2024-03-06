@@ -8539,9 +8539,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dashboard__main {
-  margin-top: 90px;
+  /* margin-top: 90px; */
   width: 100%;
-  padding-left: 300px;
+  padding: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -14152,9 +14152,9 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: flex-start !important;
 }
 
-.justify-end {
+/* .justify-end {
   justify-content: flex-end !important;
-}
+} */
 
 .justify-center {
   justify-content: center !important;

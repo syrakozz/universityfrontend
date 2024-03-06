@@ -2,7 +2,7 @@
 
 
 
-
+import StudentsFive from '@/components/homes/students/StudentsFive'
 import About from '@/components/about/About'
 import BecomeInstactor from '@/components/common/BecomeInstactor'
 import BacomeStudent from '@/components/common/BecomeStudent'
@@ -40,10 +40,10 @@ export default function page() {
             {/* <Testimonials/>
 
             <LearningPathSix/> */}
-
+         
             <BecomeInstactor/>
             {/* <BacomeStudent/> */}
-
+             <StudentsFive/>
 
 
             {/* <Brands/> */}

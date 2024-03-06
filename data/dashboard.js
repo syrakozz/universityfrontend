@@ -353,45 +353,47 @@ export const grades = [
   {
     id: 1,
     name: "Jenny Wilson",
-    email: "alitfn@example.com",
-    avatar: "/assets/img/avatars/small/1.png",
+    email: "Early Childhood Education",
+    credits:"99",
+    Contract: "sheet",
+    coursedescription:"File pdf",
   },
-  {
-    id: 2,
-    name: "Jenny Wilson",
-    email: "alitfn@example.com",
-    avatar: "/assets/img/avatars/small/1.png",
-  },
-  {
-    id: 3,
-    name: "Jenny Wilson",
-    email: "alitfn@example.com",
-    avatar: "/assets/img/avatars/small/1.png",
-  },
-  {
-    id: 4,
-    name: "Jenny Wilson",
-    email: "alitfn@example.com",
-    avatar: "/assets/img/avatars/small/1.png",
-  },
-  {
-    id: 5,
-    name: "Jenny Wilson",
-    email: "alitfn@example.com",
-    avatar: "/assets/img/avatars/small/1.png",
-  },
-  {
-    id: 6,
-    name: "Jenny Wilson",
-    email: "alitfn@example.com",
-    avatar: "/assets/img/avatars/small/1.png",
-  },
-  {
-    id: 7,
-    name: "Jenny Wilson",
-    email: "alitfn@example.com",
-    avatar: "/assets/img/avatars/small/1.png",
-  },
+  // {
+  //   id: 2,
+  //   name: "Jenny Wilson",
+  //   email: "alitfn@example.com",
+  //   avatar: "/assets/img/avatars/small/1.png",
+  // },
+  // {
+  //   id: 3,
+  //   name: "Jenny Wilson",
+  //   email: "alitfn@example.com",
+  //   avatar: "/assets/img/avatars/small/1.png",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Jenny Wilson",
+  //   email: "alitfn@example.com",
+  //   avatar: "/assets/img/avatars/small/1.png",
+  // },
+  // {
+  //   id: 5,
+  //   name: "Jenny Wilson",
+  //   email: "alitfn@example.com",
+  //   avatar: "/assets/img/avatars/small/1.png",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Jenny Wilson",
+  //   email: "alitfn@example.com",
+  //   avatar: "/assets/img/avatars/small/1.png",
+  // },
+  // {
+  //   id: 7,
+  //   name: "Jenny Wilson",
+  //   email: "alitfn@example.com",
+  //   avatar: "/assets/img/avatars/small/1.png",
+  // },
 ];
 
 export const messageList = [
