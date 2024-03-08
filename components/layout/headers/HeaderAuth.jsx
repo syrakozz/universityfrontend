@@ -18,7 +18,7 @@ export default function HeaderAuth() {
                   <Image
                     width={140}
                     height={50}
-                    src="/assets/img/general/logo.svg"
+                    src="/assets/img/general/logo.jpeg"
                     alt="logo"
                   />
                 </Link>

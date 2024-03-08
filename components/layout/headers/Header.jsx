@@ -25,19 +25,13 @@ export default function Header() {
                     <Image
                       width={140}
                       height={50}
-                      src="/assets/img/general/logo.png"
+                      src="/assets/img/general/logo.jpeg"
                       alt="logo"
                     />
                   </Link>
                 </div>
 
-                {/* header explore start */}
-                {/* <HeaderExplore
-                  allClasses={
-                    "header__explore text-green-1 ml-60 xl:ml-30 xl:d-none"
-                  }
-                /> */}
-                {/* header explore end */}
+               
               </div>
             </div>
 

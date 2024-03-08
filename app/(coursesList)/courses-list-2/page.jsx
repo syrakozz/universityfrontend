@@ -2,7 +2,7 @@
 
 import PageLinks from '@/components/common/PageLinks'
 import Preloader from '@/components/common/Preloader'
-
+import Grades from '@/components/dashboard/Grades'
 import CourseListTwo from '@/components/courseList/CourseListTwo'
 import FooterOne from '@/components/layout/footers/FooterOne'
 import Header from '@/components/layout/headers/Header'
@@ -22,7 +22,7 @@ export default function page() {
         <Header/>
         <div className="content-wrapper  js-content-wrapper overflow-hidden">
             <PageLinks/>
-            <CourseListTwo/>
+            <Grades/>
             <FooterOne/>
         </div>
     </div>

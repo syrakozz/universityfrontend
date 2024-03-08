@@ -19,7 +19,7 @@ export default function FooterOne() {
                 <Image
                   width={140}
                   height={50}
-                  src="/assets/img/footer/footer-logo.png"
+                  src="/assets/img/general/logo.jpeg"
                   alt="logo"
                 />
               </div>
@@ -37,7 +37,7 @@ export default function FooterOne() {
           </div>
         </div>
 
-        <div className="footer-columns">
+        {/* <div className="footer-columns">
           <div className="row y-gap-30">
             <FooterLinks
               allClasses={"text-17 fw-500 text-white uppercase mb-25"}
@@ -58,7 +58,7 @@ export default function FooterOne() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="py-30 border-top-light-15">
           <div className="row justify-between items-center y-gap-20">

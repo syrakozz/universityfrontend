@@ -20,15 +20,10 @@ export const menuList = [
       {
         title: "Course List Layouts",
         links: [
-          { href: "/courses-list-1", label: "Course List v1" },
-          { href: "/courses-list-2", label: "Course List v2" },
-          { href: "/courses-list-3", label: "Course List v3" },
-          { href: "/courses-list-4", label: "Course List v4" },
-          { href: "/courses-list-5", label: "Course List v5" },
-          { href: "/courses-list-6", label: "Course List v6" },
-          { href: "/courses-list-7", label: "Course List v7" },
-
-          { href: "/courses-list-8", label: "Course List v8" },
+          { href: "/courses-list-1", label: "School of Education" },
+          { href: "/courses-list-2", label: "School of Arts & Sciences" },
+          { href: "/courses-list-3", label: "School of Business" },
+        
         ],
       },
       {
