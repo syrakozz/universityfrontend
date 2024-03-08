@@ -2,9 +2,11 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { events, categories } from "@/data/events";
-import Pagination from "../common/Pagination";
 import Link from "next/link";
+import RequestEngine from "@/core/RequestEngine";
+import {Utilites} from "@/core/Utilites";
 export default function EventsOne() {
+  const [data, setData] = useState([]);
   const [pageItems, setPageItems] = useState([]);
   const [currentCategory, setCurrentCategory] = useState("News");
   useEffect(() => {
@@ -16,7 +18,25 @@ export default function EventsOne() {
       setPageItems(filtered);
     }
   }, [currentCategory]);
-  
+
+
+  useEffect(() => {
+    prepareData()
+  }, []);
+
+
+  const prepareData= async () =>{
+    let engine = new RequestEngine();
+    const response = await engine.getItem("user","/news");
+    debugger
+    if(response && response.status === 200){
+
+      setData(response.data.data)
+
+    }
+
+  }
+
   return (
     <>
       <section className="page-header -type-1">
@@ -27,13 +47,6 @@ export default function EventsOne() {
                 <div>
                   <h1 className="page-header__title">News</h1>
                 </div>
-
-                {/* <div>
-                  <p className="page-header__text">
-                    We’re on a mission to deliver engaging, curated courses at a
-                    reasonable price.
-                  </p>
-                </div> */}
               </div>
             </div>
           </div>
@@ -62,14 +75,14 @@ export default function EventsOne() {
             <div className="tabs__content pt-40 js-tabs-content">
               <div className="tabs__pane -tab-item-1 is-active">
                 <div className="row y-gap-30 pt-30">
-                  {pageItems.map((elm, i) => (
+                  {data.map((elm, i) => (
                     <div key={i} className="col-lg-4 col-md-6">
                       <div className="eventCard -type-1">
                         <div className="eventCard__img">
                           <Image
                             width={510}
                             height={360}
-                            src={elm.imgSrc}
+                            src={"/assets/img/courses-list/2.jpeg"}
                             alt="image"
                           />
                         </div>
@@ -82,29 +95,20 @@ export default function EventsOne() {
                                   className="linkCustom"
                                   href={`/events/${elm.id}`}
                                 >
-                                  {elm.desc}
+                                  <div dangerouslySetInnerHTML={{__html: elm.text}} ></div>
                                 </Link>
                               </h4>
                               <div className="d-flex x-gap-15 pt-10">
                                 <div className="d-flex items-center">
                                   <div className="icon-calendar-2 text-16 mr-8"></div>
-                                  <div className="text-14">{elm.date}</div>
+                                  <div className="text-14">{Utilites.renderDate(elm.createdAt)}</div>
                                 </div>
                                 <div className="d-flex items-center">
                                   <div className="icon-location text-16 mr-8"></div>
-                                  <div className="text-14">{elm.location}</div>
+                                  <div className="text-14">{elm.name}</div>
                                 </div>
                               </div>
                             </div>
-
-                            {/* <div className="eventCard__button">
-                              <Link
-                                href={`/events/${elm.id}`}
-                                className="button -sm -rounded -outline-purple-1 text-purple-1 px-25"
-                              >
-                                Buy
-                              </Link>
-                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -112,7 +116,7 @@ export default function EventsOne() {
                   ))}
                 </div>
 
-               
+
               </div>
             </div>
           </div>
