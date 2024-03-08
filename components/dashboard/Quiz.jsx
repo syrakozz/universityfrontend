@@ -498,7 +498,6 @@ export default function Quiz() {
         </div>
       </div>
 
-      <FooterNine />
     </div>
   );
 }

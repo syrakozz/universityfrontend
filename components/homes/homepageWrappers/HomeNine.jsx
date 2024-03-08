@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import HeaderNine from "@/components/layout/headers/HeaderNine";
 import Sidebar from "../Sidebar";
 
-import FooterNine from "@/components/layout/footers/FooterNine";
 import HeroNine from "../heros/HeroNine";
 import CategoriesNine from "../categories/CategoriesNine";
 import CoursesFive from "../courses/CoursesFive";
@@ -73,7 +72,6 @@ export default function HomeNine() {
                 <Brands />
               </div>
 
-              <FooterNine />
             </div>
           </div>
         </div>
