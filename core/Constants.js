@@ -1,6 +1,6 @@
 const Constants = {
-   serverlink: 'http://localhost:3003/',
- //serverlink: 'http://142.93.140.102:3001/',
+  // serverlink: 'http://localhost:3003/',
+ serverlink: 'http://188.166.52.152:3003/',
 
 
 };

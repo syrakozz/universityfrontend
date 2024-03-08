@@ -82,7 +82,7 @@ export default function EventsOne() {
                             <Image
                               width={510}
                               height={360}
-                              src={"/assets/img/courses-list/2.jpeg"}
+                              src={event.fullpicture}
                               alt="image"
                             />
                           </div>
@@ -96,7 +96,7 @@ export default function EventsOne() {
                                   >
                                     <div
                                       dangerouslySetInnerHTML={{
-                                        __html: event.text,
+                                        __html: Utilites.getWords(Utilites.renderDescription(event.text),20)+"...",
                                       }}
                                     ></div>
                                   </Link>
@@ -105,9 +105,10 @@ export default function EventsOne() {
                                   <div className="d-flex items-center">
                                     <div className="icon-calendar-2 text-16 mr-8"></div>
                                     <div className="text-14">
-                                      {event.createdAt}
+                                      {Utilites.renderDate(event.createdAt)}
                                     </div>
                                   </div>
+                                  <br/>
                                   <div className="d-flex items-center">
                                     <div className="icon-location text-16 mr-8"></div>
                                     <div className="text-14">{event.name}</div>

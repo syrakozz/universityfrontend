@@ -125,11 +125,15 @@ export class Utilites {
 
     static renderDescription(msg){
     try {
-        msg = msg.replace(/Product #/g, "<br />Product #");
+        msg= msg.replace(/(<([^>]+)>)/gi, "");
         return msg
     }catch (e) {
         return ""
     }
+    }
+
+    static getWords(str,limit  = 10) {
+        return str.split(/\s+/).slice(0,limit).join(" ");
     }
 
 
