@@ -90,16 +90,12 @@ export default function EventsOne() {
                             <div className="eventCard__content y-gap-10">
                               <div className="eventCard__inner">
                                 <h4 className="eventCard__title text-17 fw-500">
-                                  <Link
-                                    className="linkCustom"
-                                    href={`/events/${event.id}`}
-                                  >
+
                                     <div
                                       dangerouslySetInnerHTML={{
                                         __html: Utilites.getWords(Utilites.renderDescription(event.text),20)+"...",
                                       }}
                                     ></div>
-                                  </Link>
                                 </h4>
                                 <div className="d-flex x-gap-15 pt-10">
                                   <div className="d-flex items-center">
