@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import FooterNine from "../layout/footers/FooterNine";
+import React from "react";;
 import { reviews } from "@/data/reviews";
 import Star from "../common/Star";
 import { courseDiscussion } from "@/data/dashboard";
@@ -450,7 +449,6 @@ export default function Forums() {
         </div>
       </div>
 
-      <FooterNine />
     </div>
   );
 }

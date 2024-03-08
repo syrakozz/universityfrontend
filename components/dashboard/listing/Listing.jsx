@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import FooterNine from "../../layout/footers/FooterNine";
 import Media from "./Media";
 import Curriculum from "./Curriculum";
 
@@ -158,7 +157,6 @@ export default function Listing() {
         </div>
       </div>
 
-      <FooterNine />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import FooterNine from "../layout/footers/FooterNine";
 import PageLinksTwo from "../common/PageLinksTwo";
 
 export default function Quiz() {

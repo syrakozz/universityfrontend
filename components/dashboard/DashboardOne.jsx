@@ -5,7 +5,6 @@ import { states } from "@/data/dashboard";
 import { teamMembers } from "@/data/instractors";
 import { notifications } from "@/data/notifications";
 import React from "react";
-import FooterNine from "../layout/footers/FooterNine";
 import Charts from "./Charts";
 import PieChartComponent from "./PieCharts";
 import Image from "next/image";
@@ -333,7 +332,6 @@ export default function DashboardOne() {
         </div>
       </div>
 
-      <FooterNine />
     </div>
   );
 }

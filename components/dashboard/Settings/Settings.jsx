@@ -5,7 +5,6 @@ import EditProfile from "./EditProfile";
 import Password from "./Password";
 import SocialProfiles from "./SocialProfiles";
 import CloseAccount from "./CloseAccount";
-import FooterNine from "@/components/layout/footers/FooterNine";
 import Notification from "./Notifications";
 
 const buttons = [
@@ -63,7 +62,6 @@ export default function Settings() {
         </div>
       </div>
 
-      <FooterNine />
     </div>
   );
 }

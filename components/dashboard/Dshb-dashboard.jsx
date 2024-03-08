@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import FooterNine from "../layout/footers/FooterNine";
 
 import PieChartComponent from "./PieCharts";
 import { activeUsers, coursesData, states, timeline } from "@/data/dashboard";
@@ -783,7 +782,6 @@ export default function DshbDashboard() {
         </div>
       </div>
 
-      <FooterNine />
     </div>
   );
 }

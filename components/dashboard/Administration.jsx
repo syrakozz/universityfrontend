@@ -2,8 +2,6 @@
 
 import { sections } from "@/data/adminitrationFeatures";
 import React, { useState } from "react";
-import FooterNine from "../layout/footers/FooterNine";
-import Link from "next/link";
 import PageLinksTwo from "../common/PageLinksTwo";
 const tabs = [
   { id: 1, title: "Site administration" },
@@ -81,7 +79,6 @@ export default function Administration() {
         </div>
       </div>
 
-      <FooterNine />
     </div>
   );
 }

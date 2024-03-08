@@ -18,21 +18,21 @@ import FooterOne from "../components/layout/footers/FooterOne";
 import Preloader from "@/components/common/Preloader";
 
 export const metadata = {
-  title: 'Home-1 || Educrat - Professional LMS Online Education Course NextJS Template',
+  title: 'Paris Uni',
   description:
     'Elevate your e-learning content with Educrat, the most impressive LMS template for online courses, education and LMS platforms.',
-  
+
 }
 
 export default function HomePage() {
   return (
-    
+
     <>
     <Preloader/>
     <Header />
-    
+
     <div className="content-wrapper  js-content-wrapper overflow-hidden">
-    
+
       <HomeHero />
       <Brands/>
       <Categories />
@@ -43,10 +43,10 @@ export default function HomePage() {
       <Instructors/>
       {/* <GetApp/> */}
       {/* {/* <Blog/> */}
-      <Join/> 
+      <Join/>
       <FooterOne/>
-      
-      
+
+
     </div>
   </>
   );
