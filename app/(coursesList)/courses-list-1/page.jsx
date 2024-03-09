@@ -10,10 +10,9 @@ import React from 'react'
 
 
 export const metadata = {
-  title: 'Couese-list-1 || Educrat - Professional LMS Online Education Course NextJS Template',
-  description:
-    'Elevate your e-learning content with Educrat, the most impressive LMS template for online courses, education and LMS platforms.',
-  
+  title: 'School of Education',
+  description:'',
+
 }
 
 export default function page() {
@@ -23,10 +22,8 @@ export default function page() {
         <Header/>
         <div className="content-wrapper  js-content-wrapper overflow-hidden">
         <PageLinks/>
-          <Grades/>
-          
-            {/* <CourseListOne/> */}
-            <FooterOne/>
+          <Grades />
+          <FooterOne/>
         </div>
     </div>
   )
