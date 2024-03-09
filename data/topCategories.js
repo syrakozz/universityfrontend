@@ -8,7 +8,7 @@ export const topCategories = [
   {
     id: 2,
     iconSrc: "/assets/img/featureCards/2.svg",
-    title: "School of Education",
+    title: "School of Educationx",
     text: "565+ Courses",
   },
   {
@@ -20,27 +20,9 @@ export const topCategories = [
   {
     id: 4,
     iconSrc: "/assets/img/featureCards/4.svg",
-    title: "School of Education",
+    title: "School of Educationy",
     text: "35+ Courses",
   },
-  // {
-  //   id: 5,
-  //   iconSrc: "/assets/img/featureCards/5.svg",
-  //   title: "Personal Development",
-  //   text: "908+ Courses",
-  // },
-  // {
-  //   id: 6,
-  //   iconSrc: "/assets/img/featureCards/6.svg",
-  //   title: "Finance Accounting",
-  //   text: "129+ Courses",
-  // },
-  // {
-  //   id:7 ,
-  //   iconSrc: "/assets/img/featureCards/4.svg",
-  //   title: "Engineering Architecture",
-  //   text: "35+ Courses",
-  // },
 ];
 
 export const topCategoriesTwo = [

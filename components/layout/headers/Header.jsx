@@ -31,7 +31,7 @@ export default function Header() {
                   </Link>
                 </div>
 
-               
+
               </div>
             </div>
 
@@ -44,17 +44,6 @@ export default function Header() {
             <div className="col-auto">
               <div className="header-right d-flex items-center">
                 <div className="header-right__icons text-white d-flex items-center">
-                  {/* search toggle start */}
-                  <SearchToggle />
-                  {/* search toggle end */}
-
-                  {/* cart toggle start */}
-                  <CartToggle
-                    parentClassess={"relative ml-30 xl:ml-20"}
-                    allClasses={"d-flex items-center text-white"}
-                  />
-                  {/* cart toggle end */}
-
                   <div className="d-none xl:d-block ml-20">
                     <button
                       onClick={() => setActiveMobileMenu(true)}

@@ -54,22 +54,7 @@ export default function LoginForm() {
                 </div>
               </form>
 
-              <div className="lh-12 text-dark-1 fw-500 text-center mt-20">
-                Or sign in using
-              </div>
 
-              <div className="d-flex x-gap-20 items-center justify-between pt-20">
-                <div>
-                  <button className="button -sm px-24 py-20 -outline-blue-3 text-blue-3 text-14">
-                    Log In via Facebook
-                  </button>
-                </div>
-                <div>
-                  <button className="button -sm px-24 py-20 -outline-red-3 text-red-3 text-14">
-                    Log In via Google+
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>

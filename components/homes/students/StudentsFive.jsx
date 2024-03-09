@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { students } from "@/data/students";
+
+
 export default function StudentsFive() {
   return (
     <section className="layout-pt-lg layout-pb-lg bg-light-4">
@@ -9,24 +11,15 @@ export default function StudentsFive() {
           <div className="col-lg-6">
             <div className="sectionTitle ">
               <h2 className="sectionTitle__title ">Our Team</h2>
-
               <p className="sectionTitle__text ">
               Educating Minds, Building Connections.
+
+
+
               </p>
             </div>
           </div>
-
-          {/* <div className="col-auto">
-            <a
-              href="#"
-              className="button -icon -purple-3 -rounded text-purple-1"
-            >
-              View All Students
-              <i className="icon-arrow-top-right text-13 ml-10"></i>
-            </a>
-          </div> */}
         </div>
-
         <div className="row y-gap-30 pt-60 lg:pt-40">
           {students.slice(0, 4).map((elm, i) => (
             <div key={i} className="col-lg-3 col-md-6">
@@ -52,30 +45,15 @@ export default function StudentsFive() {
                     {elm.title}
                   </div>
 
-                  {/* <div className="teamCard__socials d-flex x-gap-20 pt-12">
-                    {elm.socials.map((itm, index) => (
-                      <a key={index} href={itm.link}>
-                        <i className={itm.icon}></i>
-                      </a>
-                    ))}
-                  </div>
-
-                  <div className="teamCard-tags pt-20">
-                    {elm.tags.map((itm, index) => (
-                      <div key={index} className="teamCard-tags__item">
-                        <div className="teamCard-tags__tag">{itm}</div>
-                      </div>
-                    ))}
-                  </div>
 
                   <div className="teamCard__button mt-20">
                     <a
-                      href={elm.buttonLink}
+                      href={elm.link}
                       className="button -icon -outline-purple-1 -rounded text-purple-1"
                     >
-                      View Profile
+                      View
                     </a>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </div>

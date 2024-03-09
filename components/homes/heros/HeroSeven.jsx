@@ -61,24 +61,6 @@ export default function HeroSeven() {
                   <br className="lg:d-none" />
                   for the future of work.
                 </p>
-                <div className="row items-center x-gap-20 y-gap-20 pt-20">
-                  <div className="col-auto">
-                    <Link
-                      href="/signup"
-                      className="button -md -gradient-1 -rounded text-white"
-                    >
-                      Join For Free
-                    </Link>
-                  </div>
-                  <div className="col-auto">
-                    <Link
-                      href="/courses-list-1"
-                      className="button -md -outline-light-5 -rounded text-dark-1"
-                    >
-                      Find Courses
-                    </Link>
-                  </div>
-                </div>
               </div>
             </div>
 

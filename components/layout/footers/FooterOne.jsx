@@ -76,15 +76,6 @@ export default function FooterOne() {
                   </div>
                 </div>
 
-                <div>
-                  <Link
-                    href="#"
-                    className="button px-30 h-50 -dark-6 rounded-200 text-white"
-                  >
-                    <i className="icon-worldwide text-20 mr-15"></i>
-                    <span className="text-15">English</span>
-                  </Link>
-                </div>
               </div>
             </div>
           </div>

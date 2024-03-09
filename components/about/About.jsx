@@ -66,15 +66,6 @@ environment where students, faculty, staff, and alumni can come together to buil
 community of collaboration, prepare students professionally, and promote ethical business
 practices.
               </p>
-             
-              <div className="d-inline-block">
-                <Link
-                  href="/signup"
-                  className="button -md -purple-1 text-white mt-30"
-                >
-                  Start Learning For Free
-                </Link>
-              </div>
             </div>
           </div>
         </div>

@@ -21,24 +21,6 @@ export default function HeroFive() {
                 <br className="md:d-none" />
                 Join 17 million learners today
               </p>
-              <div className="masthead__button row x-gap-20 y-gap-20 pt-30">
-                <div className="col-auto">
-                  <Link
-                    href="/signup"
-                    className="button -md -purple-1 -rounded text-white"
-                  >
-                    Join For Free
-                  </Link>
-                </div>
-                <div className="col-auto">
-                  <Link
-                    href="/courses-list-1"
-                    className="button -md -outline-dark-1 -rounded text-dark-1"
-                  >
-                    Find Courses
-                  </Link>
-                </div>
-              </div>
             </div>
           </div>
 

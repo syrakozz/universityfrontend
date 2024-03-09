@@ -41,16 +41,11 @@ export const featureTwo = [
 export const featureSix = [
   {
     id: 1,
-    imageSrc: "/assets/img/home-6/hero/icons/1.svg",
-    text: "Over 12 million students",
-  },
-  {
-    id: 2,
     imageSrc: "/assets/img/home-6/hero/icons/2.svg",
     text: "More than 60,000 courses",
   },
   {
-    id: 3,
+    id: 2,
     imageSrc: "/assets/img/home-6/hero/icons/3.svg",
     text: "Learn anything online",
   },

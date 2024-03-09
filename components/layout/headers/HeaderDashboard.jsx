@@ -209,14 +209,6 @@ export default function HeaderDashboard() {
                       <i className="text-24 icon icon-maximize"></i>
                     </button>
                   </div>
-
-                  <CartToggle
-                    parentClassess={"relative"}
-                    allClasses={
-                      "d-flex items-center text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
-                    }
-                  />
-
                   <div
                     className="relative"
                     onClick={() => setMessageOpen(true)}

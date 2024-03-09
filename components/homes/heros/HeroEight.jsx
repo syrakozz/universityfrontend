@@ -23,24 +23,6 @@ export default function HeroEight() {
                 <br className="lg:d-none" />
                 professional trainers for free
               </p>
-              <div className="row items-center x-gap-20 y-gap-20 pt-20">
-                <div className="col-auto">
-                  <Link
-                    href="/signup"
-                    className="button -md -orange-1 text-white"
-                  >
-                    Join For Free
-                  </Link>
-                </div>
-                <div className="col-auto">
-                  <Link
-                    href="/courses-list-6"
-                    className="button -md -outline-light-5 text-dark-1"
-                  >
-                    Find Courses
-                  </Link>
-                </div>
-              </div>
 
               <div className="row x-gap-20 y-gap-20 items-center pt-60 lg:pt-30">
                 {featureSix.map((elm, i) => (

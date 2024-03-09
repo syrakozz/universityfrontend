@@ -65,7 +65,7 @@ export default function Menu({ allClasses, headerPosition }) {
                   submenu == "About Us " ? "activeMenu" : "inActiveMenu"
                 }
               >
-                About Us 
+                About Us
               </Link>
             </li>
             <li className="menu-item-has-children">
@@ -74,9 +74,9 @@ export default function Menu({ allClasses, headerPosition }) {
                 href="/event-list-1"
                 className={menuItem == "Events" ? "activeMenu" : ""}
               >
-               News 
+               News
               </Link>
-             
+
             </li>
             <li className="menu-item-has-children -has-mega-menu">
               <Link
@@ -88,7 +88,7 @@ export default function Menu({ allClasses, headerPosition }) {
               </Link>
 
               <div className="subnav">
-                      
+
 
                       <ul className="mega__list">
                         {menuList[1].links[0].links.map((elm, i) => (
@@ -108,12 +108,12 @@ export default function Menu({ allClasses, headerPosition }) {
                       </ul>
                     </div>
 
-                  
+
             </li>
 
-          
 
-           
+
+
 
             <li>
               <Link
