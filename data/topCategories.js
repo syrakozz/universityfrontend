@@ -3,26 +3,26 @@ export const topCategories = [
     id: 1,
     iconSrc: "/assets/img/featureCards/1.svg",
     title: "School of Arts & Sciences",
-    text: "573+ Courses",
+    text: "19+ Courses",
   },
   {
     id: 2,
     iconSrc: "/assets/img/featureCards/2.svg",
-    title: "School of Educationx",
-    text: "565+ Courses",
+    title: "School of Education",
+    text: "8+ Courses",
   },
   {
     id: 3,
     iconSrc: "/assets/img/featureCards/3.svg",
     title: "School of Business",
-    text: "126+ Courses",
+    text: "9+ Courses",
   },
-  {
-    id: 4,
-    iconSrc: "/assets/img/featureCards/4.svg",
-    title: "School of Educationy",
-    text: "35+ Courses",
-  },
+  // {
+  //   id: 4,
+  //   iconSrc: "/assets/img/featureCards/4.svg",
+  //   title: "School of Educationy",
+  //   text: "35+ Courses",
+  // },
 ];
 
 export const topCategoriesTwo = [

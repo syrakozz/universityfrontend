@@ -3,177 +3,55 @@
 export const teamMembers = [
   {
     id: 1,
-    name: "Floyd Miles",
+    name: "ACS",
     role: "President of Sales",
-    image: "/assets/img/team/1.png",
+    image: "/assets/img/team/1.jpeg",
     category:'Animation',
-    rating: 4.5,
-    reviews: 3545,
-    students: 692,
-    courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
+   
   },
   {
     id: 2,
-    name: "Cameron Williamson",
+    name: "WR",
     role: "Web Designer",
-    image: "/assets/img/team/2.png",
+    image: "/assets/img/team/2.jpeg",
     category:'Design',
-    rating: 3.5,
-    reviews: 3545,
-    students: 692,
-    courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
+    
   },
   {
     id: 3,
-    name: "Brooklyn Simmons",
+    name: "SW",
     role: "Dog Trainer",
-    image: "/assets/img/team/3.png",
+    image: "/assets/img/team/3.jpeg",
     category:'Illustration',
-    rating: 5,
-    reviews: 3545,
-    students: 692,
-    courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
   },
   {
     id: 4,
-    name: "Wade Warren",
+    name: "QALAM SOFTWARE",
     role: "Marketing Coordinator",
-    image: "/assets/img/team/4.png",
+    image: "/assets/img/team/4.jpeg",
     category:'Illustration',
-    rating: 4,
-    reviews: 3545,
-    students: 692,
-    courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
   },
   {
     id: 5,
-    name: "Bessie Cooper",
+    name: "CVA",
     role: "Marketing Coordinator",
-    image: "/assets/img/team/5.png",
+    image: "/assets/img/team/5.jpeg",
     category:'Illustration',
-    rating: 4,
-    reviews: 3545,
-    students: 692,
-    courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
+    
   },
   {
     id: 6,
-    name: "Albert Flores",
+    name: "FITTERY",
     role: "Dog Trainer",
-    image: "/assets/img/team/6.png",
+    image: "/assets/img/team/6.jpeg",
     category:'Animation',
-    rating: 4.5,
-    reviews: 3545,
-    students: 692,
-    courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
+    
   },
   {
     id: 7,
@@ -185,24 +63,7 @@ export const teamMembers = [
     reviews: 3545,
     students: 692,
     courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
   },
   {
     id: 8,
@@ -214,24 +75,7 @@ export const teamMembers = [
     reviews: 3545,
     students: 692,
     courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
   },
 
 
@@ -248,24 +92,7 @@ export const teamMembers = [
     reviews: 3545,
     students: 692,
     courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+   
   },
   {
     id: 10,
@@ -277,24 +104,7 @@ export const teamMembers = [
     reviews: 3545,
     students: 692,
     courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+   
   },
   {
     id: 11,
@@ -331,10 +141,7 @@ export const teamMembers = [
     role: "Marketing Coordinator",
     image: "/assets/img/team/4.png",
     category:'Design',
-    rating: 4.5,
-    reviews: 3545,
-    students: 692,
-    courses: 15,
+    
     socialProfile: [
       {
         icon: "icon-facebook",
@@ -364,24 +171,7 @@ export const teamMembers = [
     reviews: 3545,
     students: 692,
     courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+   
   },
   {
     id: 14,
@@ -389,28 +179,8 @@ export const teamMembers = [
     role: "Dog Trainer",
     image: "/assets/img/team/6.png",
     category:'Illustration',
-    rating: 4.5,
-    reviews: 3545,
-    students: 692,
-    courses: 15,
-    socialProfile: [
-      {
-        icon: "icon-facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        icon: "icon-twitter",
-        url: "https://twitter.com/?lang=en",
-      },
-      {
-        icon: "icon-instagram",
-        url: "https://www.instagram.com/",
-      },
-      {
-        icon: "icon-linkedin",
-        url: "https://www.linkedin.com/",
-      },
-    ],
+    
+   
   },
   {
     id: 15,

@@ -24,9 +24,7 @@ export default function TestimonialsOne() {
                 What People Say
               </h2>
 
-              <p className="sectionTitle__text text-white">
-                Lorem ipsum dolor sit amet, consectetur.
-              </p>
+              
             </div>
           </div>
         </div>

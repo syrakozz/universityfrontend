@@ -5,7 +5,7 @@ import { ShapeRendering } from "../../../svg/index";
 import React, { useEffect } from "react";
 import Image, { StaticImageData } from "next/image";
 
-import hero_bg from "../../../public/assets/img/home-1/hero/bg.png";
+import hero_ba from "../../../public/assets/img/home-1/hero/ba.png";
 import masthead_icon_1 from "../../../public/assets/img/masthead/icons/1.svg";
 import masthead_icon_2 from "../../../public/assets/img/masthead/icons/2.svg";
 import masthead_icon_3 from "../../../public/assets/img/masthead/icons/3.svg";
@@ -91,7 +91,7 @@ const HomeHero = () => {
     <>
       <section className="masthead -type-1 js-mouse-move-container">
         <div className="masthead__bg">
-          <Image src={hero_bg} alt="image" />
+          <Image src={hero_ba} alt="image" />
         </div>
 
         <div className="container">

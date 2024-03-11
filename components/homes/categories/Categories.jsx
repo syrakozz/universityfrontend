@@ -18,6 +18,7 @@ const CategoriesHomeOne = () => {
 
   return (
     <>
+    
       <section className="layout-pt-md layout-pb-md">
         <div className="container">
           <div className="row justify-center text-center">

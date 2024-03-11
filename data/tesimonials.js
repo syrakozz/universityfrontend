@@ -1,47 +1,63 @@
 export const testimonials = [
   {
     id: 0,
-    imageSrc: "/assets/img/testimonials/1.png",
-    name: "Courtney Henry",
-    position: "Web Designer",
-    comment: "Great Work",
-    description: `I think Educrat is the best theme I ever seen this year.
-        Amazing design, easy to customize and a design quality
-        superlative account on its cloud platform for the
-        optimized performance`,
+    imageSrc: "/assets/img/testimonials/6.jpeg",
+    name: "Stefania Rabasco from Italy",
+    // position: "Web Designer",
+    // comment: "Great Work",
+    description: `The city is great, the university is very stimulating, open
+    and bright and there are always lots of people around, and
+    the staff here are amazing.`,
   },
   {
     id: 1,
-    imageSrc: "/assets/img/testimonials/2.png",
-    name: "Ronald Richards",
-    position: "President of Sales",
-    comment: "Great Work",
-    description: `I think Educrat is the best theme I ever seen this year.
-        Amazing design, easy to customize and a design quality
-        superlative account on its cloud platform for the
-        optimized performance`,
+    imageSrc: "/assets/img/testimonials/5.jpeg",
+    name: "Athanasios Darras from Greece",
+    position: "International Management MBA",
+    // comment: "Great Work",
+    description: `With my course you can work all over the world - the
+    University of Brighton is well recognised internationally
+    and with a UK degree you can work anywhere.`,
   },
   {
     id: 2,
-    imageSrc: "/assets/img/testimonials/3.png",
-    name: "Annette Black",
-    position: "Nursing Assistant",
-    comment: "Great Work",
-    description: `I think Educrat is the best theme I ever seen this year.
-        Amazing design, easy to customize and a design quality
-        superlative account on its cloud platform for the
-        optimized performance`,
+    imageSrc: "/assets/img/testimonials/2.jpeg",
+    name: "Olaya Gonzalez from Spain",
+    // position: "Nursing Assistant",
+    // comment: "Great Work",
+    description: `It's been such a stimulating experience. You get to learn
+    so much about yourself, and have tremendous amounts of
+    knowledge and resources.`,
   },
   {
     id: 3,
-    imageSrc: "/assets/img/testimonials/4.png",
-    name: "Courtney Henry",
-    position: "Web Designer",
-    comment: "Great Work",
-    description: `I think Educrat is the best theme I ever seen this year.
-        Amazing design, easy to customize and a design quality
-        superlative account on its cloud platform for the
-        optimized performance`,
+    imageSrc: "/assets/img/testimonials/3.jpeg",
+    name: "natali karungi from Czech",
+    // position: "Web Designer",
+    // comment: "Great Work",
+    description: `PIU has a high number of international students that love to explore and are
+    experiencing similar shocks in new environments. This makes it easier to
+    blend in and learn a lot because we all tend to help each other out.`,
+  },
+ 
+  {
+    id: 4,
+    imageSrc: "/assets/img/testimonials/1.jpeg",
+    name: "Thang Nguyen from Vietnam",
+    // position: "Web Designer",
+    // comment: "Great Work",
+    description: `What I love most about the course is how challenging it is, so in terms of
+    career development, I think it’s the best preparation for the future.`,
+  },
+  {
+    id: 5,
+    imageSrc: "/assets/img/testimonials/4.jpeg",
+    name: "Emanu oguchi from Nigeria",
+    // position: "Web Designer",
+    // comment: "Great Work",
+    description: ` I can’t thank my course leader, Amy Wang, enough for her tireless support within and
+    outside the classroom. I also like the fact that my classmates and I are always pushing
+    each other forward, and comforting each other in times of good or bad.`,
   },
 ];
 
