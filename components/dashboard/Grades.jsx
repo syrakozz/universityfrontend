@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function EventsOne() {
   const [certificatesData, setCertificatesData] = useState([]);
-
+  const [hoveredIndex, setHoveredIndex] = useState(-1);
   useEffect(() => {
     fetchCertificatesData("65e39e215a35f51ff98b1da3")
   }, []);
@@ -84,38 +84,74 @@ export default function EventsOne() {
 
                 <br/>
 
-                <div className="border-light-bottom py-20 px-30">
-                  {certificatesData.map((certificate, index) => (
-                    <div key={index} className={`row y-gap-20 justify-between items-center ${index !== 0 ? "border-top-light pt-20 mt-20" : ""}`}>
-                      <div className="col-xl-3">
-                        <div className="d-flex items-center">
-                          <div className="text-dark-1 ml-10">{certificate.name}</div>
-                        </div>
-                      </div>
-                      <div className="col-xl-2">
-                        <div className="d-flex justify-end">
-                          <div className="text-dark-1">{certificate.credits}</div>
-                        </div>
-                      </div>
-                      <div className="col-xl-2">
-                        <div className="d-flex justify-end">
-                          <div className="text-dark-1"><a href={certificate.full_picture} target={"_blank"}><img width={30} src={"/assets/img/pdf.png"}/></a></div>
-                        </div>
-                      </div>
-                      <div className="col-xl-2">
-                        <div className="d-flex justify-end">
-                          <div className="text-dark-1"><a href={certificate.full_picture2} target={"_blank"}><img width={30} src={"/assets/img/pdf.png"}/></a></div>
-
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                <div className="container">
+      <div className="border-light-bottom py-20 px-30" style={{ backgroundColor: "#204250" }}>
+        <div className="row y-gap-20 justify-between items-center text-white">
+          <div className="col-xl-3">Major</div>
+          <div className="col-xl-2">Credits</div>
+          <div className="col-xl-2">Contract Sheet</div>
+          <div className="col-xl-2">Course Description</div>
+        </div>
+      </div>
+      {certificatesData.map((certificate, index) => (
+        <div
+          key={index}
+          className="border-light-bottom py-20 px-30"
+          style={{
+            backgroundColor: index === hoveredIndex ? "#204250" : (index % 2 === 0 ? "#F5F5F5" : "#FFFFFF"),
+            transition: "background-color 0.3s ease",
+            cursor: "pointer"
+            
+          }}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(-1)}
+        >
+          <div className="row y-gap-20 justify-between items-center">
+            
+            <div className="col-xl-3">
+            <div className={`col-xl-3 d-flex items-center ${index === hoveredIndex ? 'text-white' : 'text-dark-1'}`}>
+              {certificate.name}
+            </div>
+            </div>
+            <div className="col-xl-2">
+              <div className="d-flex justify-end">
+              <div className={`col-xl-2 d-flex justify-end ${index === hoveredIndex ? 'text-white' : 'text-dark-1'}`}>
+              {certificate.credits}
+            </div>
+              </div>
+            </div>
+            <div className="col-xl-2">
+              <div className="d-flex justify-end">
+                <div className="text-dark-1">
+                  <a href={certificate.full_picture} target="_blank">
+                    <img width={30} src={"/assets/img/pdf.png"} alt="PDF Icon" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-2">
+              <div className="d-flex justify-end">
+                <div className="text-dark-1">
+                  <a href={certificate.full_picture2} target="_blank">
+                    <img width={30} src={"/assets/img/pdf.png"} alt="PDF Icon" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      ))}
     </div>
+
+
+    </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+ 
   );
 }
