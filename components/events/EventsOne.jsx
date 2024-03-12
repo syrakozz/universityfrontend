@@ -35,7 +35,7 @@ export default function EventsOne() {
 
   return (
     <>
-      <section className="page-header -type-1">
+      {/* <section className="page-header -type-1">
         <div className="container">
           <div className="page-header__content">
             <div className="row justify-center text-center">
@@ -47,12 +47,12 @@ export default function EventsOne() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="layout-pt-md layout-pb-lg">
         <div className="container">
           <div className="tabs -pills js-tabs">
-            <div className="tabs__controls d-flex flex-wrap y-gap-20 justify-center x-gap-10 js-tabs-controls">
+          <div className="tabs__controls d-flex flex-wrap y-gap-20 justify-start x-gap-10 js-tabs-controls">
               {/* Render buttons for each type */}
               {typesToShow.map((type, index) => (
                 <div key={index} onClick={() => setCurrentType(type)}>
@@ -63,7 +63,7 @@ export default function EventsOne() {
                     data-tab-target=".-tab-item-1"
                     type="button"
                   >
-                    {type}
+                    {type.charAt(0).toUpperCase() + type.slice(1)}
                   </button>
                 </div>
               ))}

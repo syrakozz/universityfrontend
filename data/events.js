@@ -1,15 +1,5 @@
 export const events = [
-  // {
-  //   id: 1,
-  //   imgSrc: "/assets/img/courses-list/1.png",
-  //   title: "Summer School 2022",
-  //   date: "6 April, 2022",
-  //   location: "London, UK",
-  //   desc: `Educational technology and mobile learning`,
-  //   category: "Alumni",
-  //   // price: 450,
-  //   // preDiscount: 650,
-  // },
+  
   {
     id: 2,
     imgSrc: "/assets/img/courses-list/2.jpeg",
@@ -25,17 +15,7 @@ export const events = [
     // price: 450,
     // preDiscount: 650,
   },
-  // {
-  //   id: 3,
-  //   imgSrc: "/assets/img/courses-list/3.png",
-  //   title: "Summer School 2022",
-  //   date: "6 April, 2022",
-  //   location: "London, UK",
-  //   desc: `Guide to visas and funding to study in the UK`,
-  //   category: "Alumni",
-  //   // price: 450,
-  //   // preDiscount: 650,
-  // },
+  
   {
     id: 4,
     imgSrc: "/assets/img/courses-list/4.png",

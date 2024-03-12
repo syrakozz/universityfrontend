@@ -41,7 +41,7 @@ export const students = [
     imgSrc: "/assets/img/home-2/students/3.jpeg",
     name: "Office of the Registrar",
     title: "Mary R. Bodfish",
-    link:"about-6"
+    link:"/contact-1"
 
   },
   {

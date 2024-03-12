@@ -6,7 +6,7 @@ export const counters = [
   },
   {
     id: 2,
-    number: "496,000+",
+    number: "100,000+",
     title: "Total course views",
   },
   {
@@ -16,7 +16,7 @@ export const counters = [
   },
   {
     id: 4,
-    number: "987,000+",
-    title: "Students community",
+    number: "10,000+",
+    title: "Student graduated",
   },
 ];

@@ -49,29 +49,42 @@ export default function page() {
                         </div>
                     </section>
                     <section className="layout-pt-md layout-pb-lg">
-                        <div className="container">
-                            <div className="row y-gap-50 justify-between items-center">
+    <div className="container">
+        <div className="row y-gap-50 justify-between items-center">
 
-                                <div className="col-lg-12">
-                                    <h2 className="text-30 lh-16">
-                                        Open Letter for Dean: Charnaud A. Emil
-                                    </h2>
-                                    <p className="text-dark-1 mt-30">
-                                        Welcome to the University of Paris! Whether you are a new or continuing student you are an important part of our campus community.<br/>
-                                        I am privileged to serve as your Dean of Students and focus my leadership on creating a healthy, safe and inclusive campus where you can maximize your personal potential while pursuing your educational dreams.
-                                        Something for Everyone<br/>
-                                        The Paris International University is an amazing institution with so much to offer. Take time to explore and embrace the rich opportunities presented to you. From performances, lectures, and campus events and athletic competitions, there is something here for everyone!
-                                        Expect Respect!<br/>
-                                        Stand up for what you believe in, consider and learn from the diverse perspectives of others, and redirect or report uncivil and other inappropriate behavior.
-                                        Give back to your community – volunteer!<br/>
-                                        Share your time and talents with others on campus and around the globe.<br/>
-                                        Best wishes for an extraordinary Paris Experience, and GO BLUE!<br/>
-                                        Dean: Charnaud A. Emil
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+            <div className="col-lg-6">
+            <img
+    width="100%"
+    height={400}
+    src="/assets/img/home-2/students/4.jpeg"
+    alt="image"
+/>
+            </div>
+
+            <div className="col-lg-6">
+                <div>
+                    <h2 className="text-30 lh-16">
+                        Open Letter for Dean: Charnaud A. Emil
+                    </h2>
+                    <p className="text-dark-1 mt-30">
+                        Welcome to the University of Paris! Whether you are a new or continuing student you are an important part of our campus community.<br/>
+                        I am privileged to serve as your Dean of Students and focus my leadership on creating a healthy, safe and inclusive campus where you can maximize your personal potential while pursuing your educational dreams.
+                        Something for Everyone<br/>
+                        The Paris International University is an amazing institution with so much to offer. Take time to explore and embrace the rich opportunities presented to you. From performances, lectures, and campus events and athletic competitions, there is something here for everyone!
+                        Expect Respect!<br/>
+                        Stand up for what you believe in, consider and learn from the diverse perspectives of others, and redirect or report uncivil and other inappropriate behavior.
+                        Give back to your community – volunteer!<br/>
+                        Share your time and talents with others on campus and around the globe.<br/>
+                        Best wishes for an extraordinary Paris Experience, and GO BLUE!<br/>
+                        Dean: Charnaud A. Emil
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
                 </>
                 <FooterOne/>
             </div>

@@ -4,7 +4,7 @@ export const teamMembers = [
   {
     id: 1,
     name: "ACS",
-    role: "President of Sales",
+    role: "Anna , Human Resources",
     image: "/assets/img/team/1.jpeg",
     category:'Animation',
     
@@ -13,7 +13,7 @@ export const teamMembers = [
   {
     id: 2,
     name: "WR",
-    role: "Web Designer",
+    role: "Adam , Translator",
     image: "/assets/img/team/2.jpeg",
     category:'Design',
     
@@ -22,7 +22,7 @@ export const teamMembers = [
   {
     id: 3,
     name: "SW",
-    role: "Dog Trainer",
+    role: "Gabriel , Web Designer",
     image: "/assets/img/team/3.jpeg",
     category:'Illustration',
     
@@ -30,7 +30,7 @@ export const teamMembers = [
   {
     id: 4,
     name: "QALAM SOFTWARE",
-    role: "Marketing Coordinator",
+    role: "Naël , Programming Engineer",
     image: "/assets/img/team/4.jpeg",
     category:'Illustration',
     
@@ -38,7 +38,7 @@ export const teamMembers = [
   {
     id: 5,
     name: "CVA",
-    role: "Marketing Coordinator",
+    role: "Axel , Operation manager",
     image: "/assets/img/team/5.jpeg",
     category:'Illustration',
     
@@ -47,7 +47,7 @@ export const teamMembers = [
   {
     id: 6,
     name: "FITTERY",
-    role: "Dog Trainer",
+    role: "Alice , Marketing Coordinator",
     image: "/assets/img/team/6.jpeg",
     category:'Animation',
     
