@@ -111,14 +111,14 @@ export default function HeaderDashboard() {
                       width={140}
                       height={50}
                       className="-light-d-none"
-                      src="/assets/img/general/logo.svg"
+                      src="/assets/img/general/logo1.png"
                       alt="logo"
                     />
                     <Image
                       width={140}
                       height={50}
                       className="-dark-d-none"
-                      src="/assets/img/general/logo-dark.svg"
+                      src="/assets/img/general/logo1.png"
                       alt="logo"
                     />
                   </Link>
@@ -129,7 +129,7 @@ export default function HeaderDashboard() {
             <div className="col-auto">
               <div className="d-flex items-center">
                 <div className="text-white d-flex items-center lg:d-none mr-15">
-                  <div className="dropdown bg-transparent px-0 py-0">
+                  {/* <div className="dropdown bg-transparent px-0 py-0">
                     <div className="d-flex items-center text-14 text-dark-1">
                       All Pages
                       <i className="text-9 icon-chevron-down ml-10"></i>
@@ -186,94 +186,9 @@ export default function HeaderDashboard() {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <MyCourses />
-                </div>
-
-                <div className="d-flex items-center sm:d-none">
-                  <div className="relative">
-                    <button
-                      onClick={handleDarkmode}
-                      className="js-darkmode-toggle text-light-1 d-flex items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
-                    >
-                      <i className="text-24 icon icon-night"></i>
-                    </button>
-                  </div>
-
-                  <div className="relative">
-                    <button
-                      onClick={() => handleFullScreenToggle()}
-                      className="d-flex text-light-1 items-center justify-center size-50 rounded-16 -hover-dshb-header-light"
-                    >
-                      <i className="text-24 icon icon-maximize"></i>
-                    </button>
-                  </div>
-                  <div
-                    className="relative"
-                    onClick={() => setMessageOpen(true)}
-                  >
-                    <a
-                      href="#"
-                      className="d-flex items-center text-light-1 justify-center size-50 rounded-16 -hover-dshb-header-light"
-                      data-el-toggle=".js-msg-toggle"
-                    >
-                      <i className="text-24 icon icon-email"></i>
-                    </a>
-                  </div>
-
-                  <div
-                    className="relative"
-                    onClick={() => setIsOnNotification((pre) => !pre)}
-                  >
-                    <a
-                      href="#"
-                      className="d-flex items-center text-light-1 justify-center size-50 rounded-16 -hover-dshb-header-light"
-                      data-el-toggle=".js-notif-toggle"
-                    >
-                      <i className="text-24 icon icon-notification"></i>
-                    </a>
-
-                    <div
-                      className={`toggle-element js-notif-toggle  ${
-                        isOnNotification ? "-is-el-visible" : ""
-                      } -`}
-                    >
-                      <div className="toggle-bottom -notifications bg-white shadow-4 border-light rounded-8 mt-10">
-                        <div className="py-30 px-30">
-                          <div className="y-gap-40">
-                            {notifications.map((elm, i) => (
-                              <div
-                                key={i}
-                                className={`d-flex items-center  ${
-                                  i !== 0
-                                    ? "border-top-light -dark-border-top-light-5"
-                                    : ""
-                                } `}
-                              >
-                                <div className="shrink-0">
-                                  <Image
-                                    width={40}
-                                    height={40}
-                                    src={elm.imageSrc}
-                                    alt="image"
-                                  />
-                                </div>
-                                <div className="ml-12">
-                                  <h4 className="text-15 lh-1 fw-500 -dark-text-dark-1">
-                                    {elm.heading}
-                                  </h4>
-                                  <div className="text-13 lh-1 mt-10">
-                                    {elm.time} Hours Ago
-                                  </div>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {/* <MyCourses /> */}
                 </div>
 
                 <div

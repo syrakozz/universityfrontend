@@ -34,38 +34,41 @@ const CategoriesHomeOne = () => {
           </div>
 
           <div className="overflow-hidden pt-50 js-section-slider">
-          {showSlider && (
-  <div className="row">
-    {topCategories.map((item, i) => (
-      <div
-        key={i}
-        className="col-lg-auto col-md-3 col-sm-4 col-6"
-      >
-        <Link
-          href={`/courses-list-${item.id > 4 ? 1 : item.id}`}
-          data-aos="fade-left"
-          data-aos-duration={(i + 1) * 350}
-          className="featureCard -type-1 -featureCard-hover linkCustomTwo"
+  {showSlider && (
+    <div className="row justify-content-center">
+      {topCategories.map((item, i) => (
+        <div
+          key={i}
+          className="col-lg-auto col-md-3 col-sm-6 col-12 mb-4" 
         >
-          <div className="featureCard__content">
-            <div className="featureCard__icon">
-              <Image
-                width={45}
-                height={45}
-                src={item.iconSrc}
-                alt="icon"
-              />
+          <Link
+            href={`/courses-list-${item.id > 4 ? 1 : item.id}`}
+            data-aos="fade-left"
+            data-aos-duration={(i + 1) * 350}
+            className="featureCard -type-1 -featureCard-hover linkCustomTwo"
+          >
+            <div className="featureCard__content">
+              <div className="featureCard__icon">
+                <Image
+                  width={45}
+                  height={45}
+                  src={item.iconSrc}
+                  alt="icon"
+                />
+              </div>
+              <div className="featureCard__title">
+                {item.title}
+              </div>
+              <div className="featureCard__text">{item.text}</div>
             </div>
-            <div className="featureCard__title">
-              {item.title}
-            </div>
-            <div className="featureCard__text">{item.text}</div>
-          </div>
-        </Link>
-      </div>
-    ))}
-  </div>
-)}
+          </Link>
+        </div>
+      ))}
+    </div>
+  )}
+
+
+
 
 
           

@@ -55,7 +55,7 @@ export default function MyCourses() {
           <div className="col-12">
             <div className="rounded-16 bg-white -dark-bg-dark-1 shadow-4 h-100">
               <div className="tabs -active-purple-2 js-tabs">
-                <div className="tabs__controls d-flex items-center pt-20 px-30 border-bottom-light js-tabs-controls">
+                {/* <div className="tabs__controls d-flex items-center pt-20 px-30 border-bottom-light js-tabs-controls">
                   <button
                     className={`text-light-1 lh-12 tabs__button js-tabs-button ${
                       activeTab == 1 ? "is-active" : ""
@@ -86,9 +86,9 @@ export default function MyCourses() {
                   >
                     Not enrolled
                   </button>
-                </div>
+                </div> */}
 
-                <div className="tabs__content py-30 px-30 js-tabs-content">
+                {/* <div className="tabs__content py-30 px-30 js-tabs-content">
                   <div className="tabs__pane -tab-item-1 is-active">
                     <div className="row y-gap-10 justify-between">
                       <div className="col-auto">
@@ -250,9 +250,8 @@ export default function MyCourses() {
                     </div>
                   </div>
 
-                  {/* <div className="tabs__pane -tab-item-2"></div>
-                  <div className="tabs__pane -tab-item-3"></div> */}
-                </div>
+                  
+                </div> */}
               </div>
             </div>
           </div>

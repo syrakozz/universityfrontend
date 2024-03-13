@@ -51,7 +51,13 @@ import {Memory} from "./Memory";
 
          return await this.apiEngine.post(link,data);
      }
+     async userlogin(username,password) {
+        const link = '/api/user/login';
+        const data = {username :username,password:password}
+        console.warn(link);
 
+        return await this.apiEngine.post(link,data);
+    }
      async postItemData(path,formData,action = "save") {
          const link = '/api/'+path+'/'+action;
          const config = {

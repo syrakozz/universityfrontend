@@ -214,6 +214,10 @@
   position: relative;
 }
 
+.mega__list li:hover {
+  color:blue !important;
+}
+
 [data-anim^='cover-right']::after,
 [data-anim-child^='cover-right']::after {
   content: "";
@@ -8541,7 +8545,7 @@ h1, h2, h3, h4, h5, h6 {
 .dashboard__main {
   /* margin-top: 90px; */
   width: 100%;
-  padding: 50px;
+  padding-left: 300px;
 }
 
 @media (max-width: 1199px) {

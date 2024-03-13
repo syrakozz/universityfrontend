@@ -1,12 +1,31 @@
-"use client";
-
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function EditProfile({ activeTab }) {
   const [previewImage, setPreviewImage] = useState(
-    "/assets/img/dashboard/edit/1.png",
+    "/assets/img/dashboard/edit/1.png"
   );
+  const [userData, setUserData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    birthday: "",
+    addressLine1: "",
+    addressLine2: "",
+    state: "",
+    country: "",
+    personalInfo: "",
+  });
+
+  useEffect(() => {
+    // Retrieve user data from local storage
+    const userDataFromStorage = localStorage.getItem("user");
+    if (userDataFromStorage) {
+      // Parse the user data if it exists
+      setUserData(JSON.parse(userDataFromStorage));
+    }
+  }, []);
+
   const handleImageChange = (event) => {
     const file = event.target.files[0];
 
@@ -20,12 +39,17 @@ export default function EditProfile({ activeTab }) {
       reader.readAsDataURL(file);
     }
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Implement your form submission logic here
   };
+
   return (
     <div
-      className={`tabs__pane -tab-item-1 ${activeTab == 1 ? "is-active" : ""} `}
+      className={`tabs__pane -tab-item-1 ${
+        activeTab == 1 ? "is-active" : ""
+      } `}
     >
       <div className="row y-gap-20 x-gap-20 items-center">
         <label
@@ -95,7 +119,15 @@ export default function EditProfile({ activeTab }) {
               First Name
             </label>
 
-            <input required type="text" placeholder="First Name" />
+            <input
+              required
+              type="text"
+              placeholder={userData.fullname}
+              value={userData.firstName}
+              onChange={(e) =>
+                setUserData({ ...userData, firstName: e.target.value })
+              }
+            />
           </div>
 
           <div className="col-md-6">
@@ -103,7 +135,15 @@ export default function EditProfile({ activeTab }) {
               Last Name
             </label>
 
-            <input required type="text" placeholder="Last Name" />
+            <input
+              required
+              type="text"
+              placeholder={userData.lastName}
+              value={userData.lastName}
+              onChange={(e) =>
+                setUserData({ ...userData, lastName: e.target.value })
+              }
+            />
           </div>
 
           <div className="col-md-6">
@@ -111,56 +151,36 @@ export default function EditProfile({ activeTab }) {
               Phone
             </label>
 
-            <input required type="text" placeholder="Phone" />
+            <input
+              required
+              type="text"
+              // placeholder={userData.phone}
+              value={userData.phone}
+              onChange={(e) =>
+                setUserData({ ...userData, phone: e.target.value })
+              }
+            />
           </div>
 
-          <div className="col-md-6">
-            <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
-              Birthday
-            </label>
-
-            <input required type="text" placeholder="Birthday" />
-          </div>
+          
 
           <div className="col-md-6">
             <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
               Address Line 1
             </label>
 
-            <input required type="text" placeholder="Address Line 1" />
+            <input
+              required
+              type="text"
+              placeholder="Address Line "
+              value={userData.address}
+              onChange={(e) =>
+                setUserData({ ...userData, addressLine1: e.target.value })
+              }
+            />
           </div>
 
-          <div className="col-md-6">
-            <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
-              Address Line 2
-            </label>
-
-            <input required type="text" placeholder="Address Line 2" />
-          </div>
-
-          <div className="col-md-6">
-            <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
-              State
-            </label>
-
-            <input required type="text" placeholder="State" />
-          </div>
-
-          <div className="col-md-6">
-            <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
-              Country
-            </label>
-
-            <input required type="text" placeholder="Country" />
-          </div>
-
-          <div className="col-12">
-            <label className="text-16 lh-1 fw-500 text-dark-1 mb-10">
-              Personal info
-            </label>
-
-            <textarea required placeholder="Text..." rows="7"></textarea>
-          </div>
+        
 
           <div className="col-12">
             <button className="button -md -purple-1 text-white">

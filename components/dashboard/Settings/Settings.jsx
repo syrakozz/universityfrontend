@@ -3,16 +3,12 @@
 import React, { useState } from "react";
 import EditProfile from "./EditProfile";
 import Password from "./Password";
-import SocialProfiles from "./SocialProfiles";
-import CloseAccount from "./CloseAccount";
-import Notification from "./Notifications";
+
 
 const buttons = [
   "Edit Profile",
   "Password",
-  "Social Profiles",
-  "Notifications",
-  "Close Account",
+ 
 ];
 
 export default function Settings() {
@@ -52,9 +48,9 @@ export default function Settings() {
                 <div className="tabs__content py-30 px-30 js-tabs-content">
                   <EditProfile activeTab={activeTab} />
                   <Password activeTab={activeTab} />
-                  <SocialProfiles activeTab={activeTab} />
+                  {/* <SocialProfiles activeTab={activeTab} />
                   <Notification activeTab={activeTab} />
-                  <CloseAccount activeTab={activeTab} />
+                  <CloseAccount activeTab={activeTab} /> */}
                 </div>
               </div>
             </div>
