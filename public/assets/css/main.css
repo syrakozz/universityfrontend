@@ -5191,6 +5191,7 @@ h1, h2, h3, h4, h5, h6 {
 .masthead.-type-1 .container {
   max-width: 1530px;
   padding: 0 15px;
+  padding-top: 120px;
 }
 
 .masthead.-type-1 .masthead__bg {
@@ -6249,6 +6250,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   padding: 30px;
   padding-bottom: 20px;
+  height:320px;
 }
 
 .testimonials.-type-1 .testimonials__title {
@@ -6264,6 +6266,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
   font-weight: 400;
   color: var(--color-dark-1);
+  height: 150px;
 }
 
 .testimonials.-type-1 .testimonials-footer {
@@ -15726,3 +15729,16 @@ table.table td {
   background: white;
 }
 
+[data-aos][data-aos][data-aos-duration="300"], body[data-aos-duration="300"] [data-aos] {
+  transition-duration: .3s;
+ 
+  flex: 1;
+  
+}
+@media only screen and (max-width: 767px) {
+  [data-aos][data-aos][data-aos-duration="300"],
+  body[data-aos-duration="300"] [data-aos] {
+    flex: none; 
+    width: 100%; 
+  }
+}

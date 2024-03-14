@@ -1,22 +1,22 @@
 export const counters = [
   {
     id: 1,
-    number: "350,000+",
-    title: "Students worldwide",
+    number: "Over 1000",
+    title: "Students per year",
   },
   {
     id: 2,
-    number: "100,000+",
-    title: "Total course views",
+    number: "More than 35",
+    title: " Majors",
   },
   {
     id: 3,
-    number: "19,000+",
-    title: "Five-star course reviews",
+    number: "Free courses",
+    title: "soon",
   },
-  {
-    id: 4,
-    number: "10,000+",
-    title: "Student graduated",
-  },
+  // {
+  //   id: 4,
+  //   number: "10,000+",
+  //   title: "Student graduated",
+  // },
 ];

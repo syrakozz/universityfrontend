@@ -24,11 +24,10 @@ export default function Instructors({ backgroundColor }) {
       <div className="container">
         <div className="row y-gap-20 justify-between items-center">
           <div className="col-lg-6">
-            <div className="sectionTitle ">
-              <h2 className="sectionTitle__title " data-aos="fade-left">
-                Our students work at
-              </h2>
-            </div>
+          <div className="sectionTitle" style={{ paddingBottom: '30px' }}>
+  <h2 className="sectionTitle__title">Our students work at</h2>
+</div>
+
           </div>
         </div>
 
