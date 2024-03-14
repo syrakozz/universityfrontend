@@ -1,23 +1,9 @@
-
-
-
-
-import StudentsFive from '@/components/homes/students/StudentsFive'
 import About from '@/components/about/About'
-import BecomeInstactor from '@/components/common/BecomeInstactor'
-
-import Brands from '@/components/common/Brands'
-import PageLinks from '@/components/common/PageLinks'
-import StepsOne from '@/components/common/StepsOne'
-
 import FooterOne from '@/components/layout/footers/FooterOne'
 import Header from '@/components/layout/headers/Header'
 import React from 'react'
-import Testimonials from '../../../components/common/Testimonials'
-import LearningJourney from '@/components/common/LearningJourney'
-import LearningPathSix from '@/components/common/LearningPathSix'
 import Preloader from '@/components/common/Preloader'
-import Image from "next/image";
+import BackButton from "@/core/BackButton";
 
 export const metadata = {
     title: 'About',
@@ -26,7 +12,10 @@ export const metadata = {
 
 }
 
+
+
 export default function page() {
+
     return (
         <div className="main-content  ">
             <Preloader/>
@@ -49,6 +38,10 @@ export default function page() {
                         </div>
                     </section>
                     <section className="layout-pt-md layout-pb-lg">
+
+                        <div>
+                           <BackButton/>
+                        </div>
     <div className="container">
         <div className="row y-gap-50 justify-between items-center">
 
@@ -70,10 +63,11 @@ export default function page() {
                         Open Letter for President: Xavier Nieberding
                     </h2>
                     <p className="text-dark-1 mt-30">
-                        I have the great privilege of greeting you as president and professor of Paris International University. In both capacities, I salute you for intellectual endeavor of the highest order—in the classroom, laboratory, and beyond—mentoring and advising graduate and undergraduate students. In all this and more, you internalize our collective interest as part of your own interests and thereby embrace the notion of a common enterprise university. For the inescapable challenge of stating, debating, and renewing the purpose of such a university demands that all faculty act as true partners, each contributing to the university's self-definition as it emerges over time.<br/>
+                        I have the great privilege of greeting you as president and professor of <b>Paris International University</b>.<br/><br/> In both capacities, I salute you for intellectual endeavor of the highest order—in the classroom, laboratory, and beyond—mentoring and advising graduate and undergraduate students.<br/> In all this and more, you internalize our collective interest as part of your own interests and thereby embrace the notion of a common enterprise university.<br/><br/> For the inescapable challenge of stating, debating, and renewing the purpose of such a university demands that all faculty act as true partners, each contributing to the university's self-definition as it emerges over time.<br/><br/>
 
-                        At the core of every great institution of learning is its faculty. And you join us at an exciting time in the University’s long and distinguished history. We are at a threshold moment, for we have chosen to transform our institution from one of the leading research universities in the world into an institution that will establish a new level of educational excellence. You are at the core of that effort, and we will not compromise in our ability to secure the best possible talent to join you as we build an institution of unique stature.
-                        President: Xavier Nieberding
+                        At the core of every great institution of learning is its faculty. And you join us at an exciting time in the University’s long and distinguished history.<br/><br/> We are at a threshold moment, for we have chosen to transform our institution from one of the leading research universities in the world into an institution that will establish a new level of educational excellence. <br/><br/>
+                        You are at the core of that effort, and we will not compromise in our ability to secure the best possible talent to join you as we build an institution of unique stature.
+                        <br/>President: <b>Xavier Nieberding</b>
                     </p>
                 </div>
             </div>

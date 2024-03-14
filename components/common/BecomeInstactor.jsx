@@ -10,7 +10,7 @@ export default function BecomeInstactor() {
             <Image
               width={730}
               height={530}
-              className="w-1/1"
+              className="w-1/1 bordershadow"
               src="/assets/img/home-2/about/1.jpeg"
               alt="image"
             />
@@ -24,14 +24,6 @@ student body and faculty, PIU students regularly interact with individuals from 
 Respect for one another and mutual understanding are enshrined within PIU’s mission and code
 of ethics.
             </p>
-            {/* <div className="d-inline-block mt-20">
-              <Link
-                href="/instructor-become"
-                className="button -md -outline-purple-1 text-purple-1"
-              >
-                Apply Now
-              </Link>
-            </div> */}
           </div>
         </div>
       </div>
