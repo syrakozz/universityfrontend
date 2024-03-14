@@ -125,7 +125,8 @@ export class Utilites {
 
     static renderDescription(msg){
     try {
-        msg= msg.replace(/(<([^>]+)>)/gi, "");
+        msg= msg.replace(/<[^>]*>?/gm, '');
+        msg = msg.replace(/\&nbsp;/g, '')
         return msg
     }catch (e) {
         return ""
