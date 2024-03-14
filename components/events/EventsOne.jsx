@@ -76,7 +76,7 @@ export default function EventsOne() {
                       <div key={event.id} className="col-lg-4 col-md-6">
                         <div className="eventCard -type-1">
                           <div className="eventCard__img">
-                            <Image width={510} height={360} src={event.fullpicture} alt="image" />
+                            <Image width={420} height={360} style={{maxWidth:420,width:420,height:360}} src={event.fullpicture} alt={event.name} />
                           </div>
                           <div className="eventCard__bg bg-white">
                             <div className="eventCard__content y-gap-10">
@@ -85,14 +85,14 @@ export default function EventsOne() {
                                   {event.showFullText ? (
                                     <span>
                                       <span dangerouslySetInnerHTML={{ __html: event.text }} />
-                                      <button className="read-more" onClick={() => toggleReadMore(event.id)}>
+                                      <button className="read-more button -icon -outline-purple-1 -rounded text-purple-1 mt-20 mb-20" onClick={() => toggleReadMore(event.id)}>
                                         Show Less
                                       </button>
                                     </span>
                                   ) : (
                                     <span>
                                       {Utilites.getWords(Utilites.renderDescription(event.text), 20) + '...'}
-                                      <button className="read-more" onClick={() => toggleReadMore(event.id)}>
+                                      <button className="read-more button -icon -outline-purple-1 -rounded text-purple-1 mt-20 mb-20" onClick={() => toggleReadMore(event.id)}>
                                         Read More
                                       </button>
                                     </span>

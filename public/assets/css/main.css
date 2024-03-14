@@ -1114,18 +1114,18 @@ html.-dark-mode .icon-arrow-right {
   color: white !important;
 }
 html.-dark-mode .pagination-white-dot-dark>*{
-  
+
       background-color: #fff !important;
       opacity: 1 !important;
- 
+
   --swiper-pagination-color: white !important;
- 
+
 }
 html.-dark-mode .pagination-white-dot-dark .swiper-pagination-bullet-active {
-      
-      
+
+
   background-color: var(--color-purple-1) !important ;
-  
+
 }
 
 
@@ -4208,7 +4208,7 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   max-width: 100% !important;
-  
+
 }
 
 .header__explore > a {
@@ -15729,16 +15729,3 @@ table.table td {
   background: white;
 }
 
-[data-aos][data-aos][data-aos-duration="300"], body[data-aos-duration="300"] [data-aos] {
-  transition-duration: .3s;
- 
-  flex: 1;
-  
-}
-@media only screen and (max-width: 767px) {
-  [data-aos][data-aos][data-aos-duration="300"],
-  body[data-aos-duration="300"] [data-aos] {
-    flex: none; 
-    width: 100%; 
-  }
-}

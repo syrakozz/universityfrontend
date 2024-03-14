@@ -18,6 +18,7 @@ import LearningJourney from '@/components/common/LearningJourney'
 import LearningPathSix from '@/components/common/LearningPathSix'
 import Preloader from '@/components/common/Preloader'
 import Image from "next/image";
+import BackButton from "@/core/BackButton";
 
 export const metadata = {
     title: 'About',
@@ -49,10 +50,24 @@ export default function page() {
                         </div>
                     </section>
                     <section className="layout-pt-md layout-pb-lg">
+                        <div>
+                            <BackButton/>
+                        </div>
                         <div className="container">
-                            <div className="row y-gap-50 justify-between items-center">
+                            <div className="row y-gap-50 justify-between ">
 
-                                <div className="col-lg-12">
+                                <div className="col-lg-6">
+                                    <div>
+                                        <img
+                                            width="100%"
+                                            height={400}
+                                            src="/assets/img/home-2/students/1.jpeg"
+                                            alt="image"
+                                        />
+
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
                                     <h2 className="text-30 lh-16">
                                         Open Letter for Chairman,Board of trustees
                                     </h2>

@@ -14,9 +14,8 @@ export default function About() {
                 </div>
 
                 <div>
-                  <p className="page-header__text">
-                    We’re on a mission to deliver engaging, curated courses at a
-                    reasonable price.
+                  <p className="text-dark-1 mt-30">
+                    Paris International University is located in Paris, the capital city of France. Founded in 1989, the University offers over 36-Majors programs to students from over 100 countries. Our university is distinguished by an outstanding hands-on learning experience spanning the classroom, campus, and a wide variety of work environments.
                   </p>
                 </div>
               </div>
@@ -27,39 +26,19 @@ export default function About() {
       <section className="layout-pt-md layout-pb-lg">
         <div className="container">
           <div className="row y-gap-50 justify-between items-center">
-            <div className="col-lg-6 pr-50 sm:pr-15">
-              <div className="composition -type-8">
-                <div className="-el-1">
-                  <Image
-                    width={300}
-                    height={400}
-                    src="/assets/img/about-1/1.jpeg"
-                    alt="image"
-                  />
-                </div>
-                <div className="-el-2">
-                  <Image
-                    width={200}
-                    height={200}
-                    src="/assets/img/about-1/2.jpeg"
-                    alt="image"
-                  />
-                </div>
-                <div className="-el-3">
-                  <Image
-                    width={255}
-                    height={250}
-                    src="/assets/img/about-1/3.jpeg"
-                    alt="image"
-                  />
-                </div>
-              </div>
+            <div className="col-xl-5 offset-xl-1 col-lg-6">
+              <Image
+                  width={730}
+                  height={530}
+                  className="w-1/1 bordershadow"
+                  src="/assets/img/about-1/1.jpeg"
+                  alt="image"
+              />
             </div>
-
             <div className="col-lg-5">
-              <h2 className="text-30 lh-16">
+              <h1 className="text-30 lh-16">
               Mission Statement
-              </h2>
+              </h1>
               <p className="text-dark-1 mt-30">
               Paris International University (PIU) mission is to provide a positive learning and social
 environment where students, faculty, staff, and alumni can come together to build a campus

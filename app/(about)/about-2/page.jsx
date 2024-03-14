@@ -1,7 +1,6 @@
 
 
 
-
 import StudentsFive from '@/components/homes/students/StudentsFive'
 import About from '@/components/about/About'
 import BecomeInstactor from '@/components/common/BecomeInstactor'
@@ -30,20 +29,9 @@ export default function page() {
             <PageLinks/>
 
             <About/>
-            {/* <StepsOne/> */}
             <LearningJourney/>
-            {/* <Testimonials/>
-
-            <LearningPathSix/> */}
-
             <BecomeInstactor/>
-            {/* <BacomeStudent/> */}
              <StudentsFive/>
-
-
-            {/* <Brands/> */}
-
-
             <FooterOne/>
         </div>
 

@@ -18,6 +18,7 @@ import LearningJourney from '@/components/common/LearningJourney'
 import LearningPathSix from '@/components/common/LearningPathSix'
 import Preloader from '@/components/common/Preloader'
 import Image from "next/image";
+import BackButton from "@/core/BackButton";
 
 export const metadata = {
     title: 'About',
@@ -49,6 +50,9 @@ export default function page() {
                         </div>
                     </section>
                     <section className="layout-pt-md layout-pb-lg">
+                        <div>
+                            <BackButton/>
+                        </div>
     <div className="container">
         <div className="row y-gap-50 justify-between items-center">
 
