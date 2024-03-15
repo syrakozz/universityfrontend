@@ -2,14 +2,14 @@ export const topCategories = [
   {
     id: 1,
     iconSrc: "/assets/img/featureCards/1.svg",
-    title: "School of Arts & Sciences",
-    text: "19+ majors",
+    title: "School of Education",
+    text: "8+ majors",
   },
   {
     id: 2,
     iconSrc: "/assets/img/featureCards/2.svg",
-    title: "School of Education",
-    text: "8+ majors",
+    title: "School of Arts & Sciences",
+    text: "19+ majors",
   },
   {
     id: 3,

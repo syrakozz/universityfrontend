@@ -1,8 +1,10 @@
 // import HomeOne from "@/components/homes/home";
 import  Header  from "../components/layout/headers/Header";
+
 // import MobileMenu from "@/components/layout/component/MobileMenu";
 
 import HomeHero from "../components/homes/heros/HomeHero";
+import HeroTwo from "../components/homes/heros/HeroTwo";
 
 import Brands from "../components/common/Brands";
 import Categories from "../components/homes/categories/Categories";
@@ -16,7 +18,7 @@ import Blog from "../components/homes/blogs/Blog";
 import Join from "../components/homes/join/Join";
 import FooterOne from "../components/layout/footers/FooterOne";
 import Preloader from "@/components/common/Preloader";
-
+import FindLearningPath from "@/components/homes/FindLearningPath";
 export const metadata = {
   title: 'Paris Uni',
   description:
@@ -29,17 +31,21 @@ export default function HomePage() {
 
     <>
     <Preloader/>
-    <Header />
+    <Header/>
 
     <div className="content-wrapper  js-content-wrapper overflow-hidden">
-
+      
       <HomeHero />
       <Brands/>
       <Categories />
       {/* <Courses/> */}
+      {/* <FeaturesOne/> */}
+      <WhyCourse/> 
+      <FindLearningPath/>
+     
       <TestimonialsOne/>
-      {/* <FeaturesOne/>
-      <WhyCourse/> */}
+  
+    
       <Instructors/>
       {/* <GetApp/> */}
       {/* {/* <Blog/> */}

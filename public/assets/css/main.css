@@ -88,7 +88,7 @@
   --color-white: #FFFFFF;
   --color-black: #000000;
   --color-dark-1: #204250;
-  --color-dark-2: #1A064F;
+  --color-dark-2: #204250;
   --color-dark-3: #6A7A99;
   --color-dark-4: #242239;
   --color-dark-5: #282664;
@@ -11080,6 +11080,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pb-50 {
   padding-bottom: 50px !important;
+  padding-top: 50px;
 }
 
 .pl-50 {
@@ -11174,9 +11175,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 80px !important;
 }
 
-.mt-80 {
+/* .mt-80 {
   margin-top: 80px !important;
-}
+} */
 
 .mb-80 {
   margin-bottom: 80px !important;
@@ -15729,3 +15730,34 @@ table.table td {
   background: white;
 }
 
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+  flex: 1;
+}
+
+@media (max-width: 768px) { 
+  [data-aos^=fade][data-aos^=fade].aos-animate {
+    flex: 0 0 100%
+  }
+}
+
+
+.image-container {
+  text-align: right;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+.title  {
+  font-size: 19px;
+  font-weight: 500;
+}
+.mobileMenu .submenuOne .title {
+
+  padding:0px !important;
+ 
+}

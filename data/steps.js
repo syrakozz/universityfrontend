@@ -2,22 +2,23 @@ export const steps = [
   {
     id: 1,
     icon: "icon-online-learning-4 text-64 text-green-1",
-    title: "01. Learn",
-    text: "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.",
+    title: "News",
+    link: "/event-list-1", 
   },
   {
     id: 2,
     icon: "icon-graduation-1 text-64 text-green-1",
-    title: "02. Graduate",
-    text: "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.",
+    title: "Alumni",
+    link: "/event-list-1", 
   },
   {
     id: 3,
     icon: "icon-working-at-home-2 text-64 text-green-1",
-    title: "03. Work",
-    text: "Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.",
+    title: "Event",
+    link: "/event-list-1", 
   },
 ];
+
 
 export const stepsTwo = [
   {

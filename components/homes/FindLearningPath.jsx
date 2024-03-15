@@ -8,7 +8,7 @@ export default function FindLearningPath() {
         <div
           data-parallax-target
           className="bg-image js-lazy"
-          style={{ backgroundImage: "url(/assets/img/home-2/cta/bg.png)" }}
+          style={{ backgroundImage: "url(/assets/img/about-1/1.jpeg)" }}
         ></div>
       </div>
 
@@ -16,27 +16,22 @@ export default function FindLearningPath() {
         <div className="row justify-center text-center">
           <div className="col-auto">
             <h2 className="text-45 md:text-30 text-white">
-              Find the right learning path for you
+              Our Mission
             </h2>
           </div>
 
           <div className="w-100"></div>
 
-          <div className="col-lg-4 col-md-8">
-            <p className="text-white mt-15">
-              Match your goals to our programs, explore your options and map out
-              your path to success.
-            </p>
-          </div>
+        
 
           <div className="w-100"></div>
 
           <div className="col-auto">
             <Link
-              href="/courses-list-3"
+              href="/about-2"
               className="button -md -outline-white text-white mt-45 md:mt-20"
             >
-              Get Started Now
+            View
             </Link>
           </div>
         </div>

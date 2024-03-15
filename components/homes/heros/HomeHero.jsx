@@ -235,97 +235,60 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const HomeHero = () => {
-  useEffect(() => {
-    const parallaxIt = () => {
-      const target = document.querySelectorAll(".js-mouse-move-container");
-
-      target.forEach((container) => {
-        const targets = container.querySelectorAll(".js-mouse-move");
-
-        targets.forEach((el) => {
-          const movement = el.getAttribute("data-move");
-
-          document.addEventListener("mousemove", (e) => {
-            const relX = e.pageX - container.offsetLeft;
-            const relY = e.pageY - container.offsetTop;
-
-            gsap.to(el, {
-              x:
-                ((relX - container.offsetWidth / 2) / container.offsetWidth) *
-                Number(movement),
-              y:
-                ((relY - container.offsetHeight / 2) / container.offsetHeight) *
-                Number(movement),
-              duration: 0.2,
-            });
-          });
-        });
-      });
-    };
-
-    parallaxIt();
-  }, []);
+ 
 
   return (
     <>
       <section className="masthead -type-1 js-mouse-move-container">
         <div className="masthead__bg">
-          <Image src={hero_ba} alt="image" />
+        <Image src={hero_ba} alt="image" />
         </div>
 
         <div className="container">
-          <Swiper
+        <Swiper
             modules={[Navigation, Pagination]}
-            pagination={{
-              el: ".swiper-paginationx",
-              clickable: true,
-            }}
             navigation={{
-              nextEl: ".arrow-right-one",
-              prevEl: ".arrow-left-one",
+              nextEl: ".hero-slider-next",
+              prevEl: ".hero-slider-prev",
             }}
-            spaceBetween={30}
-            slidesPerView={1} 
-            loop={true}
+            spaceBetween={0}
+            slidesPerView={1}
+            breakpoints={{
+              450: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 1,
+              },
+              1200: {
+                slidesPerView: 1,
+              },
+            }}
+            speed={1200}
           >
-         {slidesData.map((slide) => (
-  <SwiperSlide key={slide.id}>
-    <div className="teamCard -type-1 -teamCard-hover">
-      <div className="teamCard__image position-relative">
-        <Image
-          width={1500}
-          height={700}
-          style={{ height: "100%", width: "100%" }}
-          src={slide.bgImage}
-          alt={`image-${slide.id}`}
-        />
-        <div className="teamCard__content position-absolute bottom-0 start-0 w-100 p-3">
-          <p>{slide.description}</p>
-          <button className="btn btn-primary">{slide.buttonLabel}</button>
-        </div>
-      </div>
-    </div>
-  </SwiperSlide>
-))}
-
-
+            {slidesData.map((slide) => (
+              <SwiperSlide key={slide.id}>
+                
+                 
+                    <Image
+                      width={1500}
+                      height={700}
+                      style={{ height: "100%", width: "100%" }}
+                      src={slide.bgImage}
+                      alt={`image-${slide.id}`}
+                    />
+              
         
+              </SwiperSlide>
+            ))}
           </Swiper>
-          <div className="d-flex justify-center x-gap-15 items-center pt-60 lg:pt-40">
-            <div className="col-auto">
-              <button className="d-flex items-center text-24 arrow-left-hover js-prev">
-                <i className="icon icon-arrow-left arrow-left-one"></i>
-              </button>
-            </div>
-            <div className="col-auto">
-              <div className="swiper-paginationx"></div>
-            </div>
-            <div className="col-auto">
-              <button className="d-flex items-center text-24 arrow-right-hover js-next">
-                <i className="icon icon-arrow-right arrow-right-one"></i>
-              </button>
-            </div>
-          </div>
+           <button className="swiper-prev hero-slider-prev button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-prev">
+        <i className="icon icon-arrow-left text-24"></i>
+      </button>
+
+      <button className="swiper-next hero-slider-next button -white-20 text-white size-60 rounded-full d-flex justify-center items-center js-next">
+        <i className="icon icon-arrow-right text-24"></i>
+      </button>
         </div>
 
         {/* animated shape start */}

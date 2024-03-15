@@ -15,7 +15,7 @@ export default function TestimonialsOne() {
     setShowSlider(true);
   }, []);
   return (
-    <section className="layout-pt-lg mt-80 layout-pb-lg bg-purple-1">
+    <section className="layout-pt-lg mt-80 layout-pb-lg bg-purple-1" style={{marginTop: "0px"}}>
       <div className="container ">
         <div className="row justify-center text-center">
           <div className="col-auto">
