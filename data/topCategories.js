@@ -19,8 +19,8 @@ export const topCategories = [
   },
   {
     id: 4,
-    iconSrc: "/assets/img/featureCards/3.png",
-    title: "Doctora Soon",
+    iconSrc: "/assets/img/featureCards/4.png",
+    title: "PHD Soon",
     text: "soon",
   },
 ];
