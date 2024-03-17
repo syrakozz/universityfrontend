@@ -6,7 +6,7 @@ import { menuList } from "../../../data/menu";
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function MobileMenu({ setActiveMobileMenu, activeMobileMenu }) {
@@ -45,18 +45,44 @@ export default function MobileMenu({ setActiveMobileMenu, activeMobileMenu }) {
         <div className="mobile-bg js-mobile-bg"></div>
 
         <div className="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
+          <div style={{}}>
+            <Image
+                width={160}
+                height={50}
+                src="/assets/img/general/logo.png"
+                alt="logo"
+            />
+          </div>
+
           <Link
             href="/login"
-            className={`text-dark-1 ${
+            style={{
+              float: "right",
+              position: "absolute",
+              right: 0}
+            }
+            className={`text-white-1 ${
               pathname == "/login" ? "activeMenu" : "inActiveMenu"
             } `}
           >
             Log in
+            <Image
+                width={40}
+                height={50}
+                src="/assets/img/user.png"
+
+                style={{
+                  padding: 7,
+                  marginLeft: 10}
+                }
+            />
           </Link>
+
+
         </div>
 
         {showMenu && activeMobileMenu && (
-          <div className="mobileMenu text-dark-1">
+          <div className="mobileMenu text-white-1">
             <li className="menu-item-has-children">
               <Link
                   data-barba
@@ -97,7 +123,6 @@ export default function MobileMenu({ setActiveMobileMenu, activeMobileMenu }) {
 
               <div className="subnav">
 
-
                 <ul className="mega__list">
                   {menuList[1].links[0].links.map((elm, i) => (
                       <li
@@ -108,7 +133,7 @@ export default function MobileMenu({ setActiveMobileMenu, activeMobileMenu }) {
                                 : "inActiveMegaMenu"
                           }
                       >
-                        <Link data-barba href={elm.href}>
+                        <Link data-barba href={elm.href} className={"text-white-1"}>
                           {elm.label}
                         </Link>
                       </li>
@@ -146,7 +171,7 @@ export default function MobileMenu({ setActiveMobileMenu, activeMobileMenu }) {
         data-el-toggle=".js-mobile-menu-toggle"
       >
         <div className="size-40 d-flex items-center justify-center rounded-full bg-white">
-          <div className="icon-close text-dark-1 text-16"></div>
+          <div className="icon-close text-white-1 text-16"></div>
         </div>
       </div>
 

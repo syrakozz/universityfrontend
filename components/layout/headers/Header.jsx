@@ -1,9 +1,5 @@
 "use client";
 import React from "react";
-import { HeaderExplore } from "../component/header-explore";
-
-import SearchToggle from "../component/SearchToggle";
-import CartToggle from "../component/CartToggle";
 import Menu from "../component/Menu";
 import Link from "next/link";
 import Image from "next/image";

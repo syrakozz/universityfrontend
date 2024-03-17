@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 export default function MobileFooter() {
   return (
     <>
@@ -10,11 +11,27 @@ export default function MobileFooter() {
         </div>
 
         <div className="lh-2 mt-10">
+
           <div>
-          
-            <br />137 , Avenue Jean Jaures F - 92140 Clamart /<br /> 
+            <div>
+              <br />137 , Avenue Jean Jaures F - 92140 Clamart /<br />
+            </div>
+            <div><a href="mailto:info@piu-paris.com" >info@piu-paris.com</a></div>
+            <div><a href="mailto:dean@piu-paris.com" >dean@piu-paris.com</a></div>
+            <div><a href="mailto:adm@piu-paris.com" >adm@piu-paris.com</a></div>
+            <div><a href="tel:+33744253346" >+33744253346</a></div>
+
           </div>
-          <div>info@piu-paris.com</div>
+          <div style={{float: "right",
+            position: "relative",
+            top: -125}}>
+            <Image
+                width={90}
+                height={50}
+                src="/assets/img/general/parisfooter.png"
+            />
+          </div>
+
         </div>
 
         <div className="mobile-socials mt-10">

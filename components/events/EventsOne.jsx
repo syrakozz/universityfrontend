@@ -76,7 +76,7 @@ export default function EventsOne() {
                       <div key={event.id} className="col-lg-4 col-md-6">
                         <div className="eventCard -type-1">
                           <div className="eventCard__img">
-                            <Image width={420} height={360} style={{maxWidth:420,width:420,height:360}} src={event.fullpicture} alt={event.name} />
+                            <img  src={event.fullpicture} alt={event.name} />
                           </div>
                           <div className="eventCard__bg bg-white">
                             <div className="eventCard__content y-gap-10">
