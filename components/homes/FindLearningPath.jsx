@@ -8,7 +8,7 @@ export default function FindLearningPath() {
         <div
           data-parallax-target
           className="bg-image js-lazy"
-          style={{ backgroundImage: "url(/assets/img/about-1/1.jpeg)" }}
+          style={{ backgroundImage: "url(/assets/img/about-1/1.jpg)" }}
         ></div>
       </div>
 
@@ -22,7 +22,7 @@ export default function FindLearningPath() {
 
           <div className="w-100"></div>
 
-        
+
 
           <div className="w-100"></div>
 

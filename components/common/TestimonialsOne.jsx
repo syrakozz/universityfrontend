@@ -24,7 +24,7 @@ export default function TestimonialsOne() {
                 What People Say
               </h2>
 
-              
+
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function TestimonialsOne() {
             </Swiper>
           )}
 
-          <div className="d-flex x-gap-20 items-center justify-end pt-60 lg:pt-40">
+          <div className="d-flex x-gap-20 items-center justify-center pt-60 lg:pt-40">
             <div className="col-auto">
               <button className="button -outline-white text-white size-50 rounded-full d-flex justify-center items-center js-prev">
                 <i className="icon icon-arrow-left text-24"></i>
@@ -110,21 +110,6 @@ export default function TestimonialsOne() {
           </div>
         </div>
 
-        <div className="row y-gap-30  counter__row">
-          {counters.map((elm, i) => (
-            <div
-              key={i}
-              className="col-lg-3 col-sm-6"
-              data-aos="fade-left"
-              data-aos-duration={(i + 1) * 350}
-            >
-              <div className="counter -type-1">
-                <div className="counter__number">{elm.number}</div>
-                <div className="counter__title">{elm.title}</div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

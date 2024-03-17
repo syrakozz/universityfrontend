@@ -14,9 +14,4 @@ export const counters = [
     number: "Free courses",
     title: "soon",
   },
-  // {
-  //   id: 4,
-  //   number: "10,000+",
-  //   title: "Student graduated",
-  // },
 ];

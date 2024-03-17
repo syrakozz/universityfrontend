@@ -16,7 +16,7 @@ export default function HeaderAuth() {
               <div className="header__logo ">
                 <Link data-barba href="/">
                   <Image
-                    width={140}
+                    width={200}
                     height={50}
                     src="/assets/img/general/logo.png"
                     alt="logo"
@@ -46,14 +46,6 @@ export default function HeaderAuth() {
                 </div>
               </div>
 
-              <div className="header-right__buttons md:d-none">
-                <a
-                  href="signup"
-                  className="button -sm -rounded -dark-1 text-white"
-                >
-                  Sign Up
-                </a>
-              </div>
             </div>
           </div>
         </div>

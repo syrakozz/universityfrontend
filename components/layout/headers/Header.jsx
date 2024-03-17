@@ -23,7 +23,7 @@ export default function Header() {
                 <div className="header__logo ">
                   <Link href="/">
                     <Image
-                      width={140}
+                      width={200}
                       height={50}
                       src="/assets/img/general/logo.png"
                       alt="logo"
@@ -58,12 +58,16 @@ export default function Header() {
                 <div className="header-right__buttons d-flex items-center ml-30 md:d-none">
                   <Link href="/login" className="button -underline text-white">
                     Log in
-                  </Link>
-                  <Link
-                    href="/signup"
-                    className="button -sm -white text-dark-1 ml-30"
-                  >
-                    Sign up
+                    <Image
+                        width={40}
+                        height={50}
+                        src="/assets/img/user.png"
+
+                        style={{
+                          padding: 7,
+                          marginLeft: 10}
+                        }
+                    />
                   </Link>
                 </div>
               </div>

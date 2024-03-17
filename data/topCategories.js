@@ -1,28 +1,28 @@
 export const topCategories = [
   {
     id: 1,
-    iconSrc: "/assets/img/featureCards/1.svg",
+    iconSrc: "/assets/img/featureCards/1.png",
     title: "School of Education",
     text: "8+ majors",
   },
   {
     id: 2,
-    iconSrc: "/assets/img/featureCards/2.svg",
+    iconSrc: "/assets/img/featureCards/2.png",
     title: "School of Arts & Sciences",
     text: "19+ majors",
   },
   {
     id: 3,
-    iconSrc: "/assets/img/featureCards/3.svg",
+    iconSrc: "/assets/img/featureCards/3.png",
     title: "School of Business",
     text: "9+ majors",
   },
-  // {
-  //   id: 4,
-  //   iconSrc: "/assets/img/featureCards/4.svg",
-  //   title: "School of Educationy",
-  //   text: "35+ Courses",
-  // },
+  {
+    id: 4,
+    iconSrc: "/assets/img/featureCards/3.png",
+    title: "Doctora Soon",
+    text: "soon",
+  },
 ];
 
 export const topCategoriesTwo = [

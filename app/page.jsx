@@ -20,7 +20,7 @@ import FooterOne from "../components/layout/footers/FooterOne";
 import Preloader from "@/components/common/Preloader";
 import FindLearningPath from "@/components/homes/FindLearningPath";
 export const metadata = {
-  title: 'Paris Uni',
+  title: 'Paris International Univercity',
   description:
     'Elevate your e-learning content with Educrat, the most impressive LMS template for online courses, education and LMS platforms.',
 
@@ -34,21 +34,19 @@ export default function HomePage() {
     <Header/>
 
     <div className="content-wrapper  js-content-wrapper overflow-hidden">
-      
+
       <HomeHero />
       <Brands/>
-      <Categories />
-      {/* <Courses/> */}
-      {/* <FeaturesOne/> */}
-      <WhyCourse/> 
-      <FindLearningPath/>
-     
       <TestimonialsOne/>
-  
-    
+
+      <Categories />
+      <WhyCourse/>
+      <FindLearningPath/>
+
+
+
+
       <Instructors/>
-      {/* <GetApp/> */}
-      {/* {/* <Blog/> */}
       <Join/>
       <FooterOne/>
 

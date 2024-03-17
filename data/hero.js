@@ -1,17 +1,22 @@
 export const slidesData = [
   {
     id: 1,
-    bgImage: "/assets/img/home-1/hero/hero1.jpg",
-    description: "The Alumni Network",
+    bgImage: "/assets/img/home-1/hero/hero1.png",
+    description: "",
   },
   {
     id: 2,
-    bgImage: "/assets/img/home-1/hero/hero2.jpg",
-    description: "Explore your future options",
+    bgImage: "/assets/img/home-1/hero/hero2.png",
+    description: "",
   },
   {
     id: 3,
-    bgImage: "/assets/img/home-1/hero/hero3.jpg",
-    description: "Light, Truth, Courage",
+    bgImage: "/assets/img/home-1/hero/hero3.png",
+    description: "",
+  },
+  {
+    id: 4,
+    bgImage: "/assets/img/home-1/hero/hero4.png",
+    description: "",
   },
 ];

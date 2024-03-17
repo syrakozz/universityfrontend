@@ -13,7 +13,7 @@ export const testimonials = [
     id: 1,
     imageSrc: "/assets/img/testimonials/5.jpeg",
     name: "Athanasios Darras from Greece",
-    position: "International Management MBA",
+    position: "",
     // comment: "Great Work",
     description: `With my course you can work all over the world - the
     University of Brighton is well recognised internationally
@@ -39,7 +39,7 @@ export const testimonials = [
     experiencing similar shocks in new environments. This makes it easier to
     blend in and learn a lot because we all tend to help each other out.`,
   },
- 
+
   {
     id: 4,
     imageSrc: "/assets/img/testimonials/1.jpeg",

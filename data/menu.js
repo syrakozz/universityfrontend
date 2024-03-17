@@ -2,7 +2,7 @@ export const menuList = [
   {
     title: "Home",
     links: [
-      { href: "/", label: "Home 1kk" },
+      { href: "/", label: "Home 1" },
     ],
   },
   {

@@ -24,9 +24,8 @@ export default function ContactOne() {
         <div className="container">
           <div className="row y-gap-50 justify-between">
             <div className="col-lg-4">
-              <h3 className="text-24 fw-500">Keep In Touch With Us.</h3>
-              <p className="mt-25">
-              paris international university
+              <p className="mt-25" style={{color:"red"}}>
+              Paris international university
               </p>
 
               <div className="y-gap-30 pt-60 lg:pt-40">

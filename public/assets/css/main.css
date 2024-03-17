@@ -4258,7 +4258,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   max-width: calc(1500px);
   padding: 20px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
 }
 
@@ -5170,8 +5169,7 @@ h1, h2, h3, h4, h5, h6 {
 .masthead.-type-1 {
   z-index: 1;
   position: relative;
-  padding: 140px 0 160px 0;
-  padding: 140px 0 320px 0;
+  padding: 140px 0 220px 0;
 }
 
 @media (max-width: 991px) {
@@ -5190,8 +5188,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .masthead.-type-1 .container {
   max-width: 1530px;
-  padding: 0 15px;
-  padding-top: 120px;
 }
 
 .masthead.-type-1 .masthead__bg {
@@ -9142,7 +9138,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-dark-2 {
-  background-color: var(--color-dark-2);
+  background-color: #204250;
 }
 
 .bg-dark-3 {
@@ -15729,3 +15725,54 @@ table.table td {
   background: white;
 }
 
+
+.header .header-menu .menu__nav > li:hover {
+  border-bottom: 2px solid white;
+  border-radius: 0;
+  background-color: #204250;
+  transition: width 2s;
+  color: white;
+}
+
+.header .header-menu .menu__nav > a:hover {
+  border-bottom: 2px solid white;
+  background-color: #204250;
+  transition: width 2s;
+  color: white;
+}
+
+
+.scroll-to-top  svg{
+  position: relative;
+  left: -8px;
+}
+
+a.activeMenu {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.header .header-menu .menu__nav > li {
+  font-size: 19px;
+}
+
+
+.mega__list li{
+ font-size: 14px;
+  color: #204250;
+}
+.mega__list li:hover{
+  background-color: #204250;
+  color: white;
+}
+
+.mega__list a:hover{
+  color: white!important;
+}
+
+
+.icon-user:before {
+  content: "\e971";
+}

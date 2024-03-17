@@ -42,9 +42,6 @@ export default function Menu({ allClasses, headerPosition }) {
           <Link href="/login" className="text-dark-1">
             Log in
           </Link>
-          <Link href="/signup" className="text-dark-1 ml-30">
-            Sign Up
-          </Link>
         </div>
 
         <div className="menu js-navList">
@@ -62,7 +59,7 @@ export default function Menu({ allClasses, headerPosition }) {
               <Link
                 href="/about-2"
                 className={
-                  submenu == "About Us " ? "activeMenu" : "inActiveMenu"
+                  submenu == "about-2" ? "activeMenu" : ""
                 }
               >
                 About Us
@@ -99,6 +96,7 @@ export default function Menu({ allClasses, headerPosition }) {
                                 ? "activeMenu"
                                 : "inActiveMegaMenu"
                             }
+
                           >
                             <Link data-barba href={elm.href}>
                               {elm.label}

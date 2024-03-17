@@ -23,11 +23,11 @@ const Brands = ({ backgroundColorComponent, brandsTwo }) => {
         <div className="container">
           <div className="row justify-center">
             <div className="col text-center">
-       
+
                 <h2 className="sectionTitle__title ">Trusted by the world’s best</h2>
 
-               
-             
+
+
             </div>
           </div>
           <div
@@ -53,7 +53,7 @@ const Brands = ({ backgroundColorComponent, brandsTwo }) => {
                   />
                 </div>
                 {/* Display description if the current index matches the selected index */}
-                {selectedImageIndex === index && <p>{brand.description}</p>}
+                {selectedImageIndex === index && <p style={{fontSize:20}}>{brand.description}</p>}
               </div>
             ))}
           </div>
