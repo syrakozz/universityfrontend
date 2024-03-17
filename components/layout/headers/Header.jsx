@@ -36,10 +36,10 @@ export default function Header() {
             </div>
 
             <Menu allClasses={"menu__nav text-white -is-active"} />
-            {/* <MobileMenu
+            <MobileMenu
               setActiveMobileMenu={setActiveMobileMenu}
               activeMobileMenu={activeMobileMenu}
-            /> */}
+            />
 
             <div className="col-auto">
               <div className="header-right d-flex items-center">
@@ -56,14 +56,14 @@ export default function Header() {
                 </div>
 
                 <div className="header-right__buttons d-flex items-center ml-30 md:d-none">
-                  {/* <Link href="/login" className="button -underline text-white">
+                  <Link href="/login" className="button -underline text-white">
                     Log in
-                  </Link> */}
+                  </Link>
                   <Link
-                    href="/login"
+                    href="/signup"
                     className="button -sm -white text-dark-1 ml-30"
                   >
-                  login
+                    Sign up
                   </Link>
                 </div>
               </div>
