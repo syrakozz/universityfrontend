@@ -15786,3 +15786,13 @@ a.activeMenu {
   background: #204250;
   color: white;
 }
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  [data-aos^=fade][data-aos^=fade].aos-animate {
+    flex: 0 0 100%;
+  }
+}

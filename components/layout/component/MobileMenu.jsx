@@ -130,7 +130,7 @@ export default function MobileMenu({ setActiveMobileMenu, activeMobileMenu }) {
                           className={
                             pathname.split("/")[1] == elm.href.split("/")[1]
                                 ? "activeMenu"
-                                : "inActiveMegaMenu"
+                                : "inActiveMobileMenu"
                           }
                       >
                         <Link data-barba href={elm.href} className={"text-white-1"}>
