@@ -1,14 +1,10 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import ScrollToTop from "react-scroll-to-top";
 import Socials from "@/components/common/Socials";
 import Links from "../component/Links";
-import {Fab} from "@mui/material";
 export default function FooterOne() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+
   return (
     <footer className="footer -type-1 bg-dark-1 -green-links">
       <div className="container">

@@ -15796,3 +15796,13 @@ a.activeMenu {
     flex: 0 0 100%;
   }
 }
+
+
+  .dashboard__content .col-xl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+.dashboard__content .col-xl-2 {
+  flex: 0 0 auto;
+  width: 16.66667%;
+}

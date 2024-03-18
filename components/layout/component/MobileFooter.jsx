@@ -11,7 +11,6 @@ export default function MobileFooter() {
         </div>
 
         <div className="lh-2 mt-10">
-
           <div>
             <div>
               <br />137 , Avenue Jean Jaures F - 92140 Clamart /<br />
@@ -20,7 +19,6 @@ export default function MobileFooter() {
             <div><a href="mailto:dean@piu-paris.com" >dean@piu-paris.com</a></div>
             <div><a href="mailto:adm@piu-paris.com" >adm@piu-paris.com</a></div>
             <div><a href="tel:+33744253346" >+33744253346</a></div>
-
           </div>
           <div style={{float: "right",
             position: "relative",

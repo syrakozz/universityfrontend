@@ -42,15 +42,9 @@ export default function HomePage() {
       <Categories />
       <WhyCourse/>
       <FindLearningPath/>
-
-
-
-
       <Instructors/>
       <Join/>
       <FooterOne/>
-
-
     </div>
   </>
   );
