@@ -4,19 +4,31 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { contactData } from "@/data/contactLinks";
 import dynamic from "next/dynamic";
+import {Utilites} from "@/core/Utilites";
 
 const MapComponent = dynamic(() => import("./Map"), {
   ssr: false,
 });
 export default function ContactOne() {
   const [showMap, setShowMap] = useState(false);
+  const [securityvalue,setSecurityvalue]=useState(4345)
+  const [security,setSecurity]=useState("")
   useEffect(() => {
     setShowMap(true);
   }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(security!==securityvalue){
+      alert("Please Write a valid Security Code!")
+    }else{
+      alert("Thank You!")
+    }
+
   };
 
+  useEffect(() => {
+    setSecurityvalue(Utilites.generateRandomNumber(4))
+  }, []);
   return (
     <>
       <section>{showMap && <MapComponent />}</section>
@@ -52,11 +64,6 @@ export default function ContactOne() {
 
             <div className="col-lg-7">
               <h3 className="text-24 fw-500">Send a Message.</h3>
-              {/* <p className="mt-25">
-                Neque convallis a cras semper auctor. Libero id faucibus nisl
-                <br /> tincidunt egetnvallis.
-              </p> */}
-
               <form
                 className="contact-form row y-gap-30 pt-60 lg:pt-40"
                 onSubmit={handleSubmit}
@@ -93,6 +100,22 @@ export default function ContactOne() {
                     placeholder="Message"
                     rows="8"
                   ></textarea>
+                </div>
+
+                <div className="col-12">
+                  <div className="chek-form">
+                    <input type="text" required="" onChange={(e)=>{
+                      setSecurity(e.target.value)
+                    }}  name="security" className={`form-control `} placeholder={"Security Code"} />
+                    <div className="invalid-feedback"></div>
+                  </div>
+                  <span className="security-code">
+                                                        <b className="text-new">{securityvalue[0]}</b>
+                                                        <b className="text-hot">{securityvalue[1]}</b>
+                                                        <b className="text-sale">{securityvalue[2]}</b>
+                                                        <b className="text-best">{securityvalue[3]}</b>
+                                                    </span>
+
                 </div>
                 <div className="col-12">
                   <button
