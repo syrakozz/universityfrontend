@@ -16,14 +16,14 @@ export default function EventsOne() {
     let engine = new RequestEngine();
     const response = await engine.getItem('user', '/news');
     if (response && response.status === 200) {
-      // Initialize showFullText property for each event
+     
       const eventDataWithShowFullText = response.data.data.map((event) => ({
         ...event,
         showFullText: false,
       }));
       setEventsData(eventDataWithShowFullText);
 
-      // Set the default currentType to the first type in the events data
+    
       if (response.data.data.length > 0) {
         setCurrentType(response.data.data[0].type);
       }

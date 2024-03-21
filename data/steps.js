@@ -4,18 +4,21 @@ export const steps = [
     icon: "icon-online-learning-4 text-64 text-green-1",
     title: "News",
     link: "/event-list-1", 
+    type:"news",
   },
   {
     id: 2,
     icon: "icon-graduation-1 text-64 text-green-1",
     title: "Alumni",
     link: "/event-list-1", 
+    type:"alumni",
   },
   {
     id: 3,
     icon: "icon-working-at-home-2 text-64 text-green-1",
     title: "Event",
     link: "/event-list-1", 
+    type:"event",
   },
 ];
 

@@ -152,7 +152,11 @@
   --color-success-2: #5B7052;
   --white:#fff
 }
-
+@media only screen and (max-width: 600px) {
+  .button {
+    padding: 8px 16px !important; 
+  }
+}
 [data-anim-wrap] {
   pointer-events: none;
 }
@@ -9388,6 +9392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-white {
   color: var(--color-white) !important;
+  font-size: 12px;
 }
 
 .text-black {

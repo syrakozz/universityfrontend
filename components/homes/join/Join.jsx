@@ -8,9 +8,11 @@ export default function Join() {
     <section className="layout-pt-md layout-pb-md bg-purple-1">
       <div className="container">
         <div className="row y-gap-20 justify-between items-center">
+        <h2 className="text-30 lh-15 text-white">Contact Us Now</h2>
           <div className="col">
+      
             <div className="y-gap-30 pt-60 lg:pt-40">
-              <h2 className="text-30 lh-15 text-white">Contact Us Now</h2>
+             
               {contactData.map((elm, i) => (
                 <div key={i} className="d-flex items-center">
                   <div className="d-flex justify-center items-center size-40 rounded-full bg-light-7">
