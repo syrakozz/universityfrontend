@@ -3,30 +3,41 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import RequestEngine from '@/core/RequestEngine';
 import { Utilites } from '@/core/Utilites';
+import {useSearchParams} from "next/navigation";
 
 export default function EventsOne() {
   const [eventsData, setEventsData] = useState([]);
   const [currentType, setCurrentType] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
     prepareData();
+
+
   }, []);
 
   const prepareData = async () => {
     let engine = new RequestEngine();
     const response = await engine.getItem('user', '/news');
     if (response && response.status === 200) {
-     
+
       const eventDataWithShowFullText = response.data.data.map((event) => ({
         ...event,
         showFullText: false,
       }));
       setEventsData(eventDataWithShowFullText);
 
-    
-      if (response.data.data.length > 0) {
-        setCurrentType(response.data.data[0].type);
+
+
+      let _type= searchParams;
+      if(_type && _type[0]){
+        setCurrentType(_type[0])
+      }else{
+        if (response.data.data.length > 0) {
+          setCurrentType(response.data.data[0].type);
+        }
       }
+
     }
   };
 
@@ -50,7 +61,6 @@ export default function EventsOne() {
         <div className="container">
           <div className="tabs -pills js-tabs">
             <div className="tabs__controls d-flex flex-wrap y-gap-20 justify-start x-gap-10 js-tabs-controls">
-              {/* Render buttons for each type */}
               {typesToShow.map((type, index) => (
                 <div key={index} onClick={() => setCurrentType(type)}>
                   <button

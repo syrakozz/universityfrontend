@@ -36,9 +36,9 @@ export default function ContactOne() {
         <div className="container">
           <div className="row y-gap-50 justify-between">
             <div className="col-lg-4">
-              <p className="mt-25" style={{color:"red"}}>
-              Paris international university
-              </p>
+              <h1 className="mt-25" >
+              Contact Us
+              </h1>
 
               <div className="y-gap-30 pt-60 lg:pt-40">
                 {contactData.map((elm, i) => (

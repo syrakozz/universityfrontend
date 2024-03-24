@@ -51,7 +51,7 @@ export default function EventsOne() {
         <div className="row y-gap-30">
           <div className="col-12">
             <div className="rounded-16 bg-white -dark-bg-dark-1 shadow-4 h-100">
-              <div className="py-30 px-30">
+              <div className="py-30 px-20">
                 <div>
                   The School of Business gained a leading position among the
                   several educational institutions offering similar programs of
@@ -97,11 +97,11 @@ export default function EventsOne() {
                               : "text-dark-1"
                           }`}
                           style={{
-                            borderColor: "#204250", 
+                            borderColor: "#204250",
                             backgroundColor:
                               activeButton === "65e39e625a35f51ff98b1da9"
                                 ? "#204250"
-                                : "transparent", 
+                                : "transparent",
                           }}
                         >
                           Undergraduate
@@ -118,11 +118,11 @@ export default function EventsOne() {
                               : "text-dark-1"
                           }`}
                           style={{
-                            borderColor: "#204250", 
+                            borderColor: "#204250",
                             backgroundColor:
                               activeButton === "65e4c5db2200cf54d621dd5a"
                                 ? "#204250"
-                                : "transparent", 
+                                : "transparent",
                           }}
                         >
                           Graduate
@@ -141,8 +141,8 @@ export default function EventsOne() {
                     <div className="row y-gap-20 justify-between items-center text-white">
                       <div className="col-xl-6">Major</div>
                       <div className="col-xl-2">Credits</div>
-                      <div className="col-xl-2 center">Contract Sheet</div>
-                      <div className="col-xl-2 center">Course Description</div>
+                      <div className="col-xl-2 center">Sheet</div>
+                      <div className="col-xl-2 center sidekick">Description</div>
                     </div>
                   </div>
                   {certificatesData.map((certificate, index) => (

@@ -16,13 +16,7 @@ export const topCategories = [
     iconSrc: "/assets/img/featureCards/3.png",
     title: "School of Business",
     text: "9+ majors",
-  },
-  {
-    id: 4,
-    iconSrc: "/assets/img/featureCards/4.png",
-    title: "PHD Soon",
-    text: "soon",
-  },
+  }
 ];
 
 export const topCategoriesTwo = [

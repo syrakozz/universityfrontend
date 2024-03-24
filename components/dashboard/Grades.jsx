@@ -51,7 +51,7 @@ export default function EventsOne() {
         <div className="row y-gap-30">
           <div className="col-12">
             <div className="rounded-16 bg-white -dark-bg-dark-1 shadow-4 h-100">
-              <div className="py-30 px-30">
+              <div className="py-30 px-20">
                 <div>
                   The School of Education's mission focuses on the improvement
                   of learning and teaching in educational settings. We value the
@@ -135,8 +135,8 @@ export default function EventsOne() {
                     <div className="row y-gap-20 justify-between items-center text-white">
                       <div className="col-xl-6">Major</div>
                       <div className="col-xl-2">Credits</div>
-                      <div className="col-xl-2 center">Contract Sheet</div>
-                      <div className="col-xl-2 center">Course Description</div>
+                      <div className="col-xl-2 center">Sheet</div>
+                      <div className="col-xl-2 center sidekick">Description</div>
                     </div>
                   </div>
                   {certificatesData.map((certificate, index) => (

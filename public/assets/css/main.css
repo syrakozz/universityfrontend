@@ -154,7 +154,7 @@
 }
 @media only screen and (max-width: 600px) {
   .button {
-    padding: 8px 16px !important; 
+    padding: 8px 16px !important;
   }
 }
 [data-anim-wrap] {
@@ -9392,7 +9392,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-white {
   color: var(--color-white) !important;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .text-black {
@@ -15807,6 +15807,11 @@ a.activeMenu {
 }
 
 
+.dashboard__content .col-xl-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
   .dashboard__content .col-xl-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -15845,7 +15850,7 @@ a.activeMenu {
   padding: 0 40px;
   font-size: 24px;
   font-weight: bold;
-  background: #7E5AA6;
+  background: #204250;
 }
 
 .security-code b {
@@ -15869,3 +15874,26 @@ a.activeMenu {
   color: #f59758;
 }
 
+
+
+.mobile-footer{
+  height: 260px;
+}
+
+.nopadding{
+  padding: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+  a:visited{
+    color: white !important;
+    font-weight: bold;
+  }
+
+  .sidekick{
+    position: relative;
+    left: -11px;
+  }
+
+}
