@@ -21,7 +21,7 @@ export default function Reviews() {
           <div className="col-12">
             <div className="rounded-16 bg-white -dark-bg-dark-1 shadow-4 h-100">
               <div className="d-flex items-center py-20 px-30 border-bottom-light">
-                <h2 className="text-17 lh-1 fw-500">All Reviews</h2>
+                <h2 className="text-17 lh-1 fw-500">All Notes</h2>
               </div>
 
               <div className="py-30 px-30">
@@ -77,51 +77,7 @@ export default function Reviews() {
         </div>
       </div>
 
-      <footer className="footer -dashboard py-30">
-        <div className="row items-center justify-between">
-          <div className="col-auto">
-            <div className="text-13 lh-1">
-              © 2022 Educrat. All Right Reserved.
-            </div>
-          </div>
-
-          <div className="col-auto">
-            <div className="d-flex items-center">
-              <div className="d-flex items-center flex-wrap x-gap-20">
-                <div>
-                  <Link href="/help-center" className="text-13 lh-1">
-                    Help
-                  </Link>
-                </div>
-                <div>
-                  <Link href="/terms" className="text-13 lh-1">
-                    Privacy Policy
-                  </Link>
-                </div>
-                <div>
-                  <a href="#" className="text-13 lh-1">
-                    Cookie Notice
-                  </a>
-                </div>
-                <div>
-                  <a href="#" className="text-13 lh-1">
-                    Security
-                  </a>
-                </div>
-                <div>
-                  <Link href="/terms" className="text-13 lh-1">
-                    Terms of Use
-                  </Link>
-                </div>
-              </div>
-
-              <button className="button -md -rounded bg-light-4 text-light-1 ml-30">
-                English
-              </button>
-            </div>
-          </div>
-        </div>
-      </footer>
+    
     </div>
   );
 }
