@@ -8547,7 +8547,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dashboard__main {
-  /* margin-top: 90px; */
+  margin-top: 120px;
   width: 100%;
   padding-left: 300px;
 }
@@ -15883,6 +15883,17 @@ a.activeMenu {
 .nopadding{
   padding: 0;
 }
+.select-wrapper select {
+  padding: 8px 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+.select-wrapper select:focus {
+  outline: none; 
+  border-color: #007bff; 
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -15895,5 +15906,7 @@ a.activeMenu {
     position: relative;
     left: -11px;
   }
+
+
 
 }

@@ -18,13 +18,6 @@ export const sidebarItems = [
     text: "Major",
     iconClass: "text-20 icon-badge",
   },
- 
-  {
-    id: 7,
-    href: "/dshb-settings",
-    iconClass: "text-20 icon-setting",
-    text: "Settings",
-  },
   {
     id: 6,
     href: "/dshb-reviews",
@@ -32,11 +25,28 @@ export const sidebarItems = [
     text: "Note",
   },
   {
+    id: 7,
+    href: "/dshb-settings",
+    iconClass: "text-20 icon-setting",
+    text: "Settings",
+  },
+  {
     id: 8,
     href: "/",
     iconClass: "text-20 icon-power",
     text: "Logout",
-  },
- 
+    onClick: () => {
+      console.log("Logging out...");
+    
+      localStorage.removeItem("user");
+      localStorage.removeItem("token");
+  
+      console.log("User and token removed from localStorage.");
+  
+     
+      window.location.href = "/"; 
+    }
+  }
+  
  
 ];

@@ -19,7 +19,7 @@ export default function HeaderDashboard() {
     if (userDataFromStorage) {
       const parsedUserData = JSON.parse(userDataFromStorage);
      
-      setUserImage(parsedUserData.picture);
+      setUserImage(parsedUserData.fullpicture);
     }
   }, []);
 
@@ -128,19 +128,8 @@ export default function HeaderDashboard() {
                   onClick={() => setIsOnProfile((prev) => !prev)}
                 >
                   <a href="#" data-el-toggle=".js-profile-toggle">
-                    {/* <Image
-                      width={50}
-                      height={50}
-                      className="size-50"
-                      src={userImage} // Use userImage state here
-                      alt="User Profile"
-                    /> */}
-               <img
-  src={`${Constants.serverlink}/upload/${userImage}`}
-  alt="User Profile"
-  width={50}
-  height={50}
-/>
+                  <img  src={userImage} width={50}
+                            height={50} />
 
 
                   </a>

@@ -1,5 +1,5 @@
 "use client";
-"use client";
+
 import React, { useEffect, useState } from "react";
 import RequestEngine from '@/core/RequestEngine';
 import { useParams } from "react-router-dom"; 
@@ -51,7 +51,7 @@ export default function YourComponent() {
       <div className="dashboard__content bg-light-4">
         <div className="row pb-50 mb-10">
           <div className="col-auto">
-            <h1 className="text-30 lh-12 fw-700">Dashboard</h1>
+            <h1 className="text-30 lh-12 fw-700">Major</h1>
 
           </div>
         </div>
